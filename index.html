@@ -11,70 +11,101 @@
   </head>
   <body>
     <header class="nav-bar">
-      <img class="logo" src="images/logo.png" alt="Noel's logo" />
-      <nav>
-        <ul>
-          <li><a href="#project-one">Work</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+      <a href="/index.html"
+        ><img class="logo" src="images/logo.png" alt="Noel's logo"
+      /></a>
+      <input type="checkbox" id="menu-btn" />
+      <label class="home-label" for="menu-btn">
+        <span class="nav-stick"></span>
+        <span class="nav-stick"></span>
+        <span class="nav-stick"></span>
+      </label>
+      <div class="nav-background"></div>
+      <div class="mobile-nav">
+        <ul class="navi">
+          <a class="menu-item" href="#project-one"
+            ><li class="menu-item">Work</li></a
+          >
+          <a class="menu-item" href="pages/about.html"></a><li class="menu-item">About</li></a>
+          <a class="menu-item" href="pages/contact.html"><li class="menu-item">Contact</li></a>
         </ul>
-      </nav>
+      </div>
+      <!-- <nav>
+        <ul>
+          <li class="nav-link"><a href="#project-one">Work</a></li>
+          <li class="nav-link"><a href="pages/about.html">About</a></li>
+          <li class="nav-link"><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav> -->
     </header>
 
-    <section class="hero">
-      <h1>Hello! MY name is Noel</h1>
+    <section class="hero fadeInLeft">
+      <h1>Hello! My name is Noel</h1>
       <h4>
         I’m a UI/UX designer who loves to code. <br />I’m currently based in
         Indiana.
       </h4>
-      <a href="pages/jybe-case-study.html"
-        >View latest project</a
-      >
+      <a class="btn" href="pages/jybe-case-study.html">View latest project</a>
+      <p class="scroller" id="scroll-push">&mdash; scroll down &mdash;</p>
     </section>
 
     <main>
-      <p id="bg-txt">design</p>
-      <section class="project" id="project-one">
-        <h1>Jybe</h1>
-        <p>
-          A cloud service app that encourages seamless syncing and easy sharing
-          with family, friends, and co-workers.
-        </p>
-        <a href="pages/jybe-case-study.html"
-          >View case study</a
-        >
-
-        <div class="img-container">
-          <img src="images/Jybe-iPad.png" alt="Jybe on iPad" />
-          <img src="images/Jybe-iPhone-2.png" alt="Jybe on iPhone" />
+      <p id="bg-txt"></p>
+      <section class="project jybe-section" id="project-one">
+        <div class="jybe-cta">
+          <h1 class="title">Jybe</h1>
+          <p>
+            A cloud service app that encourages seamless syncing and easy
+            sharing with family, friends, and co-workers.
+          </p>
+          <a class="btn" href="pages/jybe-case-study.html" target="_blank"
+            >View case study</a
+          >
         </div>
+
+        <img
+          class="jybe-intro"
+          src="/images/jybe-intro-image.png"
+          alt="Jybe on iPhone"
+        />
       </section>
 
       <section class="project" id="project-two">
-        <h1>Graphic Design</h1>
-        <p>
-          Many of the other projects and companies I’ve designed for with a mix
-          of ads, branding, videography, and wireframing.
-        </p>
-        <a
-          href="https://www.dropbox.com/sh/78v3b9xjzry9ztj/AACwWu-L0d9qShW4ytkwzSvBa?dl=0"
-          target="_blank"
-          >View in Dropbox</a
-        >
-
-        <div class="img-container">
-          <img src="images/SCP-AD.jpg" alt="SCP Magazine Ad" />
-          <img src="images/CRSign_v1.jpg" alt="Real Estate Sign" />
-          <img src="images/MOF.jpg" alt="Faith Church Ad" />
+        <div>
+          <h1>Graphic Design</h1>
+          <p>
+            Many of the other projects and companies I’ve designed for with a
+            mix of ads, branding, videography, and wireframing.
+          </p>
+          <a
+            class="btn"
+            href="https://www.dropbox.com/sh/78v3b9xjzry9ztj/AACwWu-L0d9qShW4ytkwzSvBa?dl=0"
+            target="_blank"
+            >View in Dropbox</a
+          >
         </div>
+
+        <img
+          src="/images/gd-intro-image.png"
+          alt="SCP Magazine Ad"
+          class="gdii"
+        />
       </section>
 
       <section class="project" id="project-three">
-        <h1>BlocJams</h1>
-        <p>
-          A small media player developed with HTML5, CSS, JavaScript, & JQuery.
-        </p>
-        View online
+        <div class="blocjams">
+          <h1>BlocJams</h1>
+          <p>
+            A small media player developed with HTML5, CSS, JavaScript, &
+            JQuery.
+          </p>
+          <a
+            class="btn"
+            href="https://blocjams2019.netlify.com/"
+            target="_blank"
+            >View online</a
+          >
+        </div>
 
         <a href="https://blocjams2019.netlify.com/" target="_blank"
           ><img
@@ -85,12 +116,16 @@
       </section>
 
       <section class="project" id="project-four">
-        <h1>Blocipedia</h1>
-        <p>
-          An informational application resembling same features as Wikipedia.
-          Built with Ruby on Rails.
-        </p>
-        View on Github
+        <div class="blocipedia">
+          <h1>Blocipedia</h1>
+          <p>
+            An informational application resembling same features as Wikipedia.
+            Built with Ruby on Rails.
+          </p>
+          <a class="btn" href="https://github.com/noelarroyo1/blocipedia"
+            >View on Github</a
+          >
+        </div>
 
         <a href="https://github.com/noelarroyo1/blocipedia" target="_blank"
           ><img
@@ -101,8 +136,8 @@
       </section>
 
       <section class="testimonials">
-        <div class="slider-container">
-          <div class="testimony">
+        <div class="slider">
+          <div class="slide" id="slide-1">
             <img src="images/JohnSmithProfileImage.png" alt="Someone's face" />
             <h2>John Smith</h2>
             <h5>Creative Services Manager</h5>
@@ -112,7 +147,7 @@
             </p>
           </div>
 
-          <div class="testimony">
+          <div class="slide" id="slide-2">
             <img src="images/JohnSmithProfileImage.png" alt="Someone's face" />
             <h2>John Smith</h2>
             <h5>Creative Services Manager</h5>
@@ -122,7 +157,7 @@
             </p>
           </div>
 
-          <div class="testimony">
+          <div class="slide" id="slide-3">
             <img src="images/JohnSmithProfileImage.png" alt="Someone's face" />
             <h2>John Smith</h2>
             <h5>Creative Services Manager</h5>
@@ -130,33 +165,32 @@
               "Noel has been such an incredible asset to our team! His push to
               get things done accurately and on time is extremely helpful."
             </p>
-          </div>
-
-          <div class="btn-container">
-            <a href="#" class="slider-btn" onclick="getdiv(-1)"></a>
-            <a href="#" class="slider-btn" onclick="getdiv(0)"></a>
-            <a href="#" class="slider-btn" onclick="getdiv(1)"></a>
           </div>
         </div>
       </section>
+      <div class="slider-btns">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
     </main>
 
     <footer>
       <h1>Get in touch</h1>
       <h4>
-        Looking for a UI/UX Designer for your next project? I’m sure we could
-        work something out.
+        Looking for a UI/UX Designer for your next<br />
+        project? I’m sure we could work something out.
       </h4>
-      <button>Email me
+      <a class="footer-btn" href="mailto:contract.noel@gmail.com">Email me</a>
       <div>
         <a href="https://github.com/noelarroyo1"
-          ><i class="fab fa-github"></i
+          ><i class="nav-link fab fa-github"></i
         ></a>
         <a href="https://www.linkedin.com/in/noelarroyo/"
-          ><i class="fab fa-linkedin-in"></i
+          ><i class="nav-link fab fa-linkedin-in"></i
         ></a>
         <a href="mailto:contract.noel@gmail.com"
-          ><i class="far fa-envelope"></i
+          ><i class="nav-link far fa-envelope"></i
         ></a>
       </div>
     </footer>
@@ -165,5 +199,6 @@
       src="https://kit.fontawesome.com/21813d5134.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="/scripts/scripts.js"></script>
   </body>
 </html>

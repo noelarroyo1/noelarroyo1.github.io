@@ -16,63 +16,70 @@
       /></a>
       <nav>
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html/#project-one">Work</a></li>
-          <li><a href="../pages/about.html">About</a></li>
-          <li><a href="../pages/contact.html">Contact</a></li>
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li>
+            <a class="nav-link" href="../index.html/#project-one/">Work</a>
+          </li>
+          <li><a class="nav-link" href="../pages/about.html">About</a></li>
+          <li><a class="nav-link" href="../pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <p class="bg-txt">contact</p>
-      <div>
-        <h2>Interested in working together?</h2>
-        <p>
-          I’m always up for meeting new people and talking about design, coding,
-          and life in general. Feel free to contact me!
-        </p>
-        <p>
-          I also love to grab a beer or coffee. Dinner? Let’s go out for sushi!
-        </p>
-      </div>
+      <p class="bg-txt-contact">contact</p>
+      <div class="contact-wrapper">
+        <div class="contact-hero">
+          <h2>
+            Interested in<br />
+            working together?
+          </h2>
+          <p>
+            I’m always up for meeting new people and talking about design,
+            coding, and life in general. Feel free to contact me!
+          </p>
+          <p>
+            I also would love to grab a beer or coffee. Dinner? Let’s go out for
+            sushi!
+          </p>
+        </div>
 
-      <div class="container">
-        <form>
-          <label for="fullname">Full Name</label>
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
-            placeholder="Full Name"
-          />
+        <div class="form-container">
+          <form>
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full Name"
+            />
 
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Email" />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" />
 
-          <label for="subject">Subject</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Message"
-            style="height:200px"
-          ></textarea>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Message"
+            ></textarea>
 
-          <input type="submit" value="Submit" />
-        </form>
+            <input class="form-btn" type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </main>
 
     <footer>
-      <div>
+      <div class="min-foot">
         <a href="https://github.com/noelarroyo1"
-          ><i class="fab fa-github"></i
+          ><i class="nav-link fab fa-github"></i
         ></a>
         <a href="https://www.linkedin.com/in/noelarroyo/"
-          ><i class="fab fa-linkedin-in"></i
+          ><i class="nav-link fab fa-linkedin-in"></i
         ></a>
         <a href="mailto:contract.noel@gmail.com"
-          ><i class="far fa-envelope"></i
+          ><i class="nav-link far fa-envelope"></i
         ></a>
       </div>
     </footer>
