@@ -122,7 +122,7 @@ section {
   background: $primary-color;
 }
 
-.mobile-nav {
+.main-nav {
   height: 100vh;
   position: absolute;
   top: 0;
@@ -135,7 +135,7 @@ section {
   z-index: 150;
 }
 
-#menu-btn:checked ~ .mobile-nav {
+#menu-btn:checked ~ .main-nav {
   width: 100vw;
   visibility: visible;
   opacity: 1;
@@ -188,21 +188,10 @@ section {
   transform: translateX(20px);
 }
 
-// nav {
-//   font-family: $p-txt;
-//   font-weight: semibold;
-//   font-size: 1.8rem;
-//   ul {
-//     display: flex;
-//     margin-right: 15rem;
-//   }
-//   a {
-//     color: $primary-color;
-//     display: block;
-//     padding: 3rem 4rem;
-//     text-decoration: none;
-//   }
-// }
+.nav-link:hover {
+  background: $highlight3;
+  transition: 0.5s;
+}
 
 .nav-bar {
   display: flex;
@@ -242,15 +231,15 @@ footer {
   padding: 1.2rem 2rem 2rem 12%;
 }
 
-// .nav-link:hover {
-//   background: $highlight3;
-//   transition: 0.5s;
-// }
-
 .hero {
   padding: 19rem 0 2rem 12%;
   border-bottom: solid 1px $primary-color;
-  animation: fadeInLeft 1s ease-in;
+  animation: fadeIn 1s ease-in;
+  height: 60vh;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid $primary-color;
 }
 
 .scroller {
@@ -280,14 +269,12 @@ footer {
   }
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
   }
 }
 
@@ -339,36 +326,43 @@ footer {
   width: 55rem;
 }
 
-#project-three,
-#project-four {
-  padding-top: 12rem;
+.single-img {
+  width: 50rem;
+  max-width: 100%;
 }
 
-#bg-txt {
+#project-four {
+  padding-bottom: 5rem;
+}
+
+.bg-txt {
   color: $ternary-color;
   font-family: $bg-txt;
   font-size: 12rem;
   font-weight: 800;
-  position: fixed;
-  top: 50%;
-  left: -1.5%;
-  opacity: 0;
+  margin: 13rem 0 0 -2rem;
+  max-width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
   text-transform: uppercase;
-  transform: translateY(-50%);
-
-  &:before {
-    content: "design";
-  }
 }
 
-.change-one {
-  &:before {
-    content: "development";
-  }
+.bg-txt-dev {
+  color: $ternary-color;
+  font-family: $bg-txt;
+  font-size: 12rem;
+  font-weight: 800;
+  margin: -4rem 0 0 -2rem;
+  max-width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  text-transform: uppercase;
 }
 
 .testimonials {
-  padding-bottom: 5rem;
+  padding-bottom: 12rem;
 }
 
 .slider {
@@ -439,6 +433,7 @@ footer {
 }
 
 .contact-hero {
+  padding-left: 8%;
   h2 {
     font-size: 4.8rem;
     font-weight: 600;
@@ -463,7 +458,7 @@ footer {
 }
 
 .form-container {
-  padding: 0 15rem 0 0;
+  padding: 0 12rem 0 0;
 }
 
 form {
@@ -533,6 +528,10 @@ form {
     font-size: 8px;
   }
 
+  .hero {
+    height: 40vh;
+  }
+
   .home-label {
     top: 0.8rem;
   }
@@ -574,6 +573,10 @@ form {
   }
 }
 
+.about-hero-image {
+  padding: 0;
+}
+
 .about-section {
   margin: 0 auto 19.5rem;
   width: 75%;
@@ -602,9 +605,10 @@ form {
 
 %flex-layout {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 15rem 5rem 20rem 0;
+  padding: 15rem 0rem 20rem 0;
   width: 100%;
 }
 
@@ -653,14 +657,16 @@ form {
 
 .overview {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
-  padding: 5rem 5rem 10rem 0;
-  width: 95%;
+  padding: 5rem 0rem 10rem 0;
+  width: 100%;
 }
 
 .problem-solution {
-  padding: 6rem 0 0 0;
-  width: 39%;
+  padding: 3rem 0 0 0;
+  width: 55rem;
+  max-width: 100%;
   h2 {
     font-family: $headers;
     font-size: 3rem;
@@ -672,12 +678,12 @@ form {
 .jybe-iphone {
   width: 30rem;
   height: 57rem;
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 
 .discovery {
   width: 100%;
-  padding: 7rem 0 10rem 13rem;
+  padding: 7rem 0 10rem 0;
   h2 {
     font-family: $headers;
     font-size: 3rem;
@@ -697,13 +703,12 @@ form {
     letter-spacing: 1px;
   }
   p {
-    width: 62rem;
+    width: 60rem;
   }
 }
 
 .comp-analysis {
   @extend %flex-layout;
-  width: 95%;
   padding-top: 0;
   p {
     width: 62rem;
@@ -711,11 +716,12 @@ form {
 }
 
 .left-section {
-  padding: 6rem 0 0 8rem;
+  padding: 6rem 0 0 0;
 }
 
 .right-section {
   text-align: center;
+  padding-top: 5rem;
   .cloud-logos {
     margin-bottom: 5rem;
   }
@@ -729,8 +735,6 @@ form {
 
 .personas {
   @extend %flex-layout;
-  flex-flow: row wrap;
-  width: 95%;
   padding-top: 0;
   p {
     width: 55rem;
@@ -738,7 +742,6 @@ form {
 }
 
 .persona-cta {
-  padding: 0 0 0 8rem;
   p {
     margin-bottom: 4rem;
   }
@@ -754,32 +757,27 @@ form {
   padding-top: 0;
   p {
     width: 53rem;
+    max-width: 100%;
     margin-bottom: 4rem;
   }
   img {
-    padding-right: 10rem;
+    padding: 0;
   }
 }
 
-.stories-left {
-  padding-left: 8rem;
-}
-
 .flows {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0 0 20rem 0;
-
+  @extend %flex-layout;
+  padding-top: 0;
   p {
     width: 53rem;
     margin-bottom: 4rem;
   }
-
   .left-btn {
     margin-right: 2.3rem;
   }
   img {
     width: 52rem;
+    padding: 0;
   }
 }
 
@@ -788,10 +786,11 @@ form {
 }
 
 .wireframing-cta {
-  padding-left: 13rem;
+  padding: 0 6%;
   width: 50rem;
+  max-width: 100%;
   h2 {
-    padding-bottom: 4rem;
+    padding: 7rem 0 4rem;
   }
 }
 
@@ -802,7 +801,8 @@ form {
   }
   .sketch1,
   .sketch2 {
-    width: 38%;
+    width: 50rem;
+    max-width: 100%;
   }
   .sketch3 {
     width: 80%;
@@ -908,5 +908,15 @@ form {
 
   .cr-sign {
     width: 30rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 6px;
+  }
+
+  .home-label {
+    top: 0rem;
   }
 }

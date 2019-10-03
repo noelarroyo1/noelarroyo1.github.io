@@ -11,17 +11,30 @@
   </head>
   <body>
     <header class="nav-bar">
-      <a href="../index.html"
+      <a href="/index.html"
         ><img class="logo" src="../images/logo.png" alt="Noel's logo"
       /></a>
-      <nav>
-        <ul>
-          <li><a class="nav-link" href="../index.html">Home</a></li>
-          <li>
-            <a class="nav-link" href="../index.html/#project-one/">Work</a>
-          </li>
-          <li><a class="nav-link" href="../pages/about.html">About</a></li>
-          <li><a class="nav-link" href="../pages/contact.html">Contact</a></li>
+      <input type="checkbox" id="menu-btn" />
+      <label class="home-label" for="menu-btn">
+        <span class="nav-stick"></span>
+        <span class="nav-stick"></span>
+        <span class="nav-stick"></span>
+      </label>
+      <div class="nav-background"></div>
+      <nav class="main-nav">
+        <ul class="navi">
+          <a class="menu-item" href="../index.html"
+            ><li class="menu-item">Home</li></a
+          >
+          <a class="menu-item" href="../pages/jybe-case-study.html"
+            ><li class="menu-item">Work</li></a
+          >
+          <a class="menu-item" href="../pages/about.html"
+            ><li class="menu-item">About</li></a
+          >
+          <a class="menu-item" href="../pages/contact.html"
+            ><li class="menu-item">Contact</li></a
+          >
         </ul>
       </nav>
     </header>

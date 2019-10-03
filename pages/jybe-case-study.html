@@ -11,17 +11,27 @@
   </head>
   <body>
     <header class="nav-bar">
-      <a href="../index.html"
+      <a href="/index.html"
         ><img class="logo" src="../images/logo.png" alt="Noel's logo"
       /></a>
-      <nav>
-        <ul>
-          <li><a class="nav-link" href="../index.html">Home</a></li>
-          <li>
-            <a class="nav-link" href="../index.html/#project-one">Work</a>
-          </li>
-          <li><a class="nav-link" href="../pages/about.html">About</a></li>
-          <li><a class="nav-link" href="../pages/contact.html">Contact</a></li>
+      <input type="checkbox" id="menu-btn" />
+      <label class="home-label" for="menu-btn">
+        <span class="nav-stick"></span>
+        <span class="nav-stick"></span>
+        <span class="nav-stick"></span>
+      </label>
+      <div class="nav-background"></div>
+      <nav class="main-nav">
+        <ul class="navi">
+          <a class="menu-item" href="../pages/jybe-case-study.html"
+            ><li class="menu-item">Work</li></a
+          >
+          <a class="menu-item" href="../pages/about.html"
+            ><li class="menu-item">About</li></a
+          >
+          <a class="menu-item" href="../pages/contact.html"
+            ><li class="menu-item">Contact</li></a
+          >
         </ul>
       </nav>
     </header>
@@ -46,7 +56,7 @@
     </section>
 
     <main>
-      <p class="bg-txt-contact">SPECS</p>
+      <p class="bg-txt">SPECS</p>
       <section class="specs">
         <div class="role">
           <h2>Role</h2>
@@ -86,6 +96,7 @@
         </div>
       </section>
 
+      <p class="bg-txt-dev">overview</p>
       <section class="overview">
         <div class="problem-solution">
           <h2>Problem/Solution</h2>
@@ -114,6 +125,7 @@
         />
       </section>
 
+      <p class="bg-txt-dev">process</p>
       <section class="discovery">
         <h2>Discovery &amp; Research</h2>
         <ul>
@@ -262,6 +274,7 @@
         <img src="../images/Cloud Services User Flow.png" alt="User Flow" />
       </section>
 
+      <p class="bg-txt-dev">design</p>
       <section class="wireframing">
         <div class="wireframing-cta">
           <h2>IA &amp; Wireframing</h2>
@@ -368,6 +381,7 @@
         </div>
       </section>
 
+      <p class="bg-txt-dev">conclusion</p>
       <section class="conclusion">
         <div class="summary">
           <h2>Conclusion</h2>

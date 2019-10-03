@@ -260,7 +260,7 @@ section {
   background: #ffffff;
 }
 
-.mobile-nav {
+.main-nav {
   height: 100vh;
   position: absolute;
   top: 0;
@@ -274,7 +274,7 @@ section {
   z-index: 150;
 }
 
-#menu-btn:checked ~ .mobile-nav {
+#menu-btn:checked ~ .main-nav {
   width: 100vw;
   visibility: visible;
   opacity: 1;
@@ -327,6 +327,12 @@ section {
           transform: translateX(20px);
 }
 
+.nav-link:hover {
+  background: #4fadff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,8 +383,13 @@ footer i {
 .hero {
   padding: 19rem 0 2rem 12%;
   border-bottom: solid 1px #ffffff;
-  -webkit-animation: fadeInLeft 1s ease-in;
-          animation: fadeInLeft 1s ease-in;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+  height: 60vh;
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #ffffff;
 }
 
 .scroller {
@@ -423,29 +434,21 @@ footer i {
   }
 }
 
-@-webkit-keyframes fadeInLeft {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
   }
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
   }
 }
 
@@ -505,35 +508,43 @@ footer i {
   width: 55rem;
 }
 
-#project-three,
-#project-four {
-  padding-top: 12rem;
+.single-img {
+  width: 50rem;
+  max-width: 100%;
 }
 
-#bg-txt {
+#project-four {
+  padding-bottom: 5rem;
+}
+
+.bg-txt {
   color: #333333;
   font-family: "Montserrat", sans-serif;
   font-size: 12rem;
   font-weight: 800;
-  position: fixed;
-  top: 50%;
-  left: -1.5%;
-  opacity: 0;
+  margin: 13rem 0 0 -2rem;
+  max-width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
   text-transform: uppercase;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
-#bg-txt:before {
-  content: "design";
-}
-
-.change-one:before {
-  content: "development";
+.bg-txt-dev {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12rem;
+  font-weight: 800;
+  margin: -4rem 0 0 -2rem;
+  max-width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  text-transform: uppercase;
 }
 
 .testimonials {
-  padding-bottom: 5rem;
+  padding-bottom: 12rem;
 }
 
 .slider {
@@ -611,6 +622,10 @@ footer i {
   width: 100%;
 }
 
+.contact-hero {
+  padding-left: 8%;
+}
+
 .contact-hero h2 {
   font-size: 4.8rem;
   font-weight: 600;
@@ -635,7 +650,7 @@ footer i {
 }
 
 .form-container {
-  padding: 0 15rem 0 0;
+  padding: 0 12rem 0 0;
 }
 
 form {
@@ -709,6 +724,9 @@ form textarea {
   html {
     font-size: 8px;
   }
+  .hero {
+    height: 40vh;
+  }
   .home-label {
     top: 0.8rem;
   }
@@ -747,6 +765,10 @@ form textarea {
   border-bottom: solid 1px #ffffff;
 }
 
+.about-hero-image {
+  padding: 0;
+}
+
 .about-section {
   margin: 0 auto 19.5rem;
   width: 75%;
@@ -774,16 +796,20 @@ form textarea {
   font-size: 1.5rem;
 }
 
-.project-hero, .comp-analysis, .personas, .stories {
+.project-hero, .comp-analysis, .personas, .stories, .flows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15rem 5rem 20rem 0;
+  padding: 15rem 0rem 20rem 0;
   width: 100%;
 }
 
@@ -845,15 +871,20 @@ form textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 5rem 5rem 10rem 0;
-  width: 95%;
+  padding: 5rem 0rem 10rem 0;
+  width: 100%;
 }
 
 .problem-solution {
-  padding: 6rem 0 0 0;
-  width: 39%;
+  padding: 3rem 0 0 0;
+  width: 55rem;
+  max-width: 100%;
 }
 
 .problem-solution h2 {
@@ -866,12 +897,12 @@ form textarea {
 .jybe-iphone {
   width: 30rem;
   height: 57rem;
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 
 .discovery {
   width: 100%;
-  padding: 7rem 0 10rem 13rem;
+  padding: 7rem 0 10rem 0;
 }
 
 .discovery h2 {
@@ -896,11 +927,10 @@ form textarea {
 }
 
 .discovery p {
-  width: 62rem;
+  width: 60rem;
 }
 
 .comp-analysis {
-  width: 95%;
   padding-top: 0;
 }
 
@@ -909,11 +939,12 @@ form textarea {
 }
 
 .left-section {
-  padding: 6rem 0 0 8rem;
+  padding: 6rem 0 0 0;
 }
 
 .right-section {
   text-align: center;
+  padding-top: 5rem;
 }
 
 .right-section .cloud-logos {
@@ -929,20 +960,11 @@ form textarea {
 }
 
 .personas {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 95%;
   padding-top: 0;
 }
 
 .personas p {
   width: 55rem;
-}
-
-.persona-cta {
-  padding: 0 0 0 8rem;
 }
 
 .persona-cta p {
@@ -960,25 +982,16 @@ form textarea {
 
 .stories p {
   width: 53rem;
+  max-width: 100%;
   margin-bottom: 4rem;
 }
 
 .stories img {
-  padding-right: 10rem;
-}
-
-.stories-left {
-  padding-left: 8rem;
+  padding: 0;
 }
 
 .flows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 0 0 20rem 0;
+  padding-top: 0;
 }
 
 .flows p {
@@ -992,6 +1005,7 @@ form textarea {
 
 .flows img {
   width: 52rem;
+  padding: 0;
 }
 
 .wireframing {
@@ -999,12 +1013,13 @@ form textarea {
 }
 
 .wireframing-cta {
-  padding-left: 13rem;
+  padding: 0 6%;
   width: 50rem;
+  max-width: 100%;
 }
 
 .wireframing-cta h2 {
-  padding-bottom: 4rem;
+  padding: 7rem 0 4rem;
 }
 
 .image-wrapper {
@@ -1017,7 +1032,8 @@ form textarea {
 
 .image-wrapper .sketch1,
 .image-wrapper .sketch2 {
-  width: 38%;
+  width: 50rem;
+  max-width: 100%;
 }
 
 .image-wrapper .sketch3 {
@@ -1131,5 +1147,14 @@ form textarea {
 
 .portfolio-showcase .cr-sign {
   width: 30rem;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 6px;
+  }
+  .home-label {
+    top: 0rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
