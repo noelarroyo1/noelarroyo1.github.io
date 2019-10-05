@@ -376,6 +376,22 @@ header {
   border-bottom: solid 1px #ffffff;
 }
 
+.col-50 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 140%;
+  width: 50rem;
+}
+
+.col-50 ul {
+  border: solid 1px #ffffff;
+  margin-top: 6rem;
+}
+
+.col-50 li {
+  padding: 2rem;
+}
+
 footer {
   border-top: solid 1px #ffffff;
   text-align: center;
@@ -1149,8 +1165,21 @@ form textarea {
 }
 
 @media screen and (max-width: 786px) {
+  .specs > div {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 40rem;
+    padding: 6% 10%;
+    width: 40%;
+  }
   .mockup-cta {
     margin: 0 auto;
+  }
+  .col-50 {
+    width: 53rem;
   }
   .branding-cta {
     margin: 0 auto;
