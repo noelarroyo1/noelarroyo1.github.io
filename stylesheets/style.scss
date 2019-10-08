@@ -702,7 +702,10 @@ form {
 
 .jybe-iphone {
   width: 27rem;
-  padding: 4rem 6% 0;
+  padding: 0 6%;
+  img {
+    max-width: 100%;
+  }
 }
 
 .discovery {
