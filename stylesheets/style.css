@@ -885,8 +885,7 @@ form textarea {
 }
 
 .jybe-iphone {
-  width: 32rem;
-  height: auto;
+  width: 27rem;
   padding: 4rem 6% 0;
 }
 
@@ -1206,6 +1205,9 @@ form textarea {
   }
   section {
     padding-bottom: 5rem;
+  }
+  .jybe-iphone {
+    width: 25rem;
   }
   .home-label {
     top: 0rem;
