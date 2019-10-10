@@ -30,6 +30,13 @@ p::selection {
   letter-spacing: 2px;
 }
 
+h1 {
+  font-family: $headers;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 h2 {
   font-family: $headers;
   font-size: 3rem;

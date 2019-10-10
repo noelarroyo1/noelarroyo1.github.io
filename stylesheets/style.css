@@ -172,6 +172,13 @@ p::selection {
   letter-spacing: 2px;
 }
 
+h1 {
+  font-family: "Lora", serif;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 h2 {
   font-family: "Lora", serif;
   font-size: 3rem;
