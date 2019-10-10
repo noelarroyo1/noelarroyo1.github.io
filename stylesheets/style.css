@@ -141,7 +141,6 @@ html {
 }
 
 body {
-  max-width: 1440px;
   overflow-wrap: hidden;
 }
 
@@ -165,7 +164,8 @@ p::selection {
   background: #4fadff;
 }
 
-h1 {
+.hero > h2,
+.project-cta > h2 {
   font-family: "Lora", serif;
   font-size: 5rem;
   font-weight: bold;
@@ -313,6 +313,7 @@ section {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   width: 100vw;
+  height: 100vh;
 }
 
 .menu-item {
@@ -349,6 +350,13 @@ section {
   color: #ffffff;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
+}
+
+.menu-item:hover > a {
+  color: #ffffff;
+  padding: 20px auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .nav-link:hover {
@@ -424,7 +432,7 @@ footer i {
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
   border-bottom: solid 1px #ffffff;
-  height: 60vh;
+  height: 50vh;
   padding: 19rem 0 2rem 12%;
 }
 
@@ -745,7 +753,8 @@ form textarea {
   text-align: center;
 }
 
-.about-hero h1 {
+.about-hero h2 {
+  font-size: 5rem;
   bottom: 25%;
   left: 12%;
   position: absolute;
@@ -896,9 +905,15 @@ form textarea {
 .discovery {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: block;
-  padding: 7rem 7% 10rem;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 7rem 10% 10rem;
+  max-width: 100%;
 }
 
 .discovery h2 {
@@ -923,16 +938,21 @@ form textarea {
 }
 
 .discovery p {
+  max-width: 100%;
   width: 60rem;
 }
 
 .comp-analysis {
-  max-width: 100%;
+  max-width: 95%;
   padding-top: 0;
 }
 
 .comp-analysis p {
   width: 55rem;
+}
+
+.comp-cta {
+  padding: 6rem 0 0;
 }
 
 .left-section {
@@ -998,7 +1018,10 @@ form textarea {
 }
 
 .flows {
-  padding-top: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 170rem;
+  padding: 0;
 }
 
 .flows p {
@@ -1012,8 +1035,8 @@ form textarea {
 
 .flows img {
   max-width: 100%;
-  padding: 0;
-  width: 45%;
+  padding: 5rem 3%;
+  width: 40%;
 }
 
 .wireframing {
@@ -1021,9 +1044,15 @@ form textarea {
 }
 
 .wireframing-cta {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   max-width: 100%;
-  padding: 0 6%;
+  padding: 0 9%;
   width: 55rem;
 }
 
@@ -1054,7 +1083,15 @@ form textarea {
 }
 
 .branding-cta {
-  padding: 6% 6% 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  max-width: 100%;
+  padding: 6% 9% 3%;
   width: 54rem;
 }
 
@@ -1065,7 +1102,9 @@ form textarea {
 .brand-image-wrap,
 .mockup-image-wrap {
   text-align: center;
-  width: 100%;
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .mockup-image-wrap > img {
@@ -1084,11 +1123,12 @@ form textarea {
 }
 
 .branding-btn {
-  margin: 0 6%;
+  margin: 0 9%;
 }
 
 .mockup-cta {
-  padding: 0 6%;
+  padding: 0 9%;
+  max-width: 100%;
   width: 54rem;
 }
 
@@ -1194,18 +1234,85 @@ form textarea {
   .wireframing-cta {
     margin: 0 auto;
   }
+  .flows {
+    padding: 0;
+    max-width: 100%;
+  }
+  .flows-cta {
+    display: block;
+    margin: 0 auto;
+  }
   .flows > img {
     display: block;
     max-width: 100%;
     padding-top: 8rem;
     text-align: center;
-    width: 85%;
+    width: 64rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   html {
     font-size: 6px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 4rem !important;
+    line-height: 150% !important;
+  }
+  p {
+    font-size: 3rem;
+    line-height: 150%;
+  }
+  .hero {
+    height: 32vh;
+  }
+  section > li {
+    font-size: 3rem !important;
+    line-height: 150%;
+  }
+  .btn {
+    background: #ffffff;
+    border: solid 2px #ffffff;
+    color: #111111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    padding: 1.2rem 2.5rem;
+    text-decoration: none;
+  }
+  .btn:hover {
+    background: #4fadff;
+    border: solid 2px #4fadff;
+    color: #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .btn-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .btn-wrapper a {
+    margin: 5rem 0 0 4%;
+  }
+  .footer-btn {
+    background: #ffffff;
+    border: solid 2px #ffffff;
+    color: #111111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 4rem 0;
+    padding: 1.2rem 8.5rem;
+    text-decoration: none;
   }
   section {
     padding-bottom: 5rem;
@@ -1224,13 +1331,37 @@ form textarea {
     font-size: 8rem;
     margin-top: -2rem;
   }
+  .comp-cta {
+    margin-left: 11%;
+  }
   .discovery > p {
-    width: 55rem;
+    max-width: 100%;
+    width: 50rem;
   }
   .left-section {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+  }
+  .brand-image-wrap,
+  .mockup-image-wrap {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .mockups,
+  .wireframing-cta,
+  .branding {
+    max-width: 100%;
+    width: 50rem;
+  }
+  .flows-cta {
+    margin: 0 6%;
+  }
+  .flows > img {
+    padding-top: 0;
+    width: 55rem;
   }
   .cloud-logos > img {
     width: 9rem;
@@ -1247,6 +1378,12 @@ form textarea {
   }
   .portfolio-showcase img {
     width: 100% !important;
+  }
+  .about-section h2 {
+    font-size: 6rem !important;
+  }
+  .about-section p {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

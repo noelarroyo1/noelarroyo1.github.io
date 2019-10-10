@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  max-width: 1440px;
   overflow-wrap: hidden;
 }
 
@@ -23,7 +22,8 @@ p::selection {
   background: $highlight3;
 }
 
-h1 {
+.hero > h2,
+.project-cta > h2 {
   font-family: $headers;
   font-size: 5rem;
   font-weight: bold;
@@ -163,6 +163,7 @@ section {
   top: 25%;
   transform: translate(-50%);
   width: 100vw;
+  height: 100vh;
 }
 
 .menu-item {
@@ -189,7 +190,6 @@ section {
     color: $secondary-color;
     text-decoration: none;
   }
-
   a:hover {
     color: $primary-color;
     transition: all 0.4s;
@@ -200,6 +200,12 @@ section {
   background-position: 100%;
   color: $primary-color;
   transform: translateX(20px);
+}
+
+.menu-item:hover > a {
+  color: $primary-color;
+  padding: 20px auto;
+  transition: all 0.4s;
 }
 
 .nav-link:hover {
@@ -264,7 +270,7 @@ footer {
 .hero {
   animation: fadeIn 1s ease-in;
   border-bottom: solid 1px $primary-color;
-  height: 60vh;
+  height: 50vh;
   padding: 19rem 0 2rem 12%;
 }
 
@@ -588,7 +594,8 @@ form {
   color: white;
   position: relative;
   text-align: center;
-  h1 {
+  h2 {
+    font-size: 5rem;
     bottom: 25%;
     left: 12%;
     position: absolute;
@@ -710,9 +717,10 @@ form {
 
 .discovery {
   box-sizing: border-box;
-  display: block;
-  padding: 7rem 7% 10rem;
-  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 7rem 10% 10rem;
+  max-width: 100%;
   h2 {
     font-family: $headers;
     font-size: 3rem;
@@ -732,17 +740,22 @@ form {
     letter-spacing: 1px;
   }
   p {
+    max-width: 100%;
     width: 60rem;
   }
 }
 
 .comp-analysis {
   @extend %flex-layout;
-  max-width: 100%;
+  max-width: 95%;
   padding-top: 0;
   p {
     width: 55rem;
   }
+}
+
+.comp-cta {
+  padding: 6rem 0 0;
 }
 
 .left-section {
@@ -807,7 +820,10 @@ form {
 
 .flows {
   @extend %flex-layout;
-  padding-top: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 170rem;
+  padding: 0;
   p {
     margin-bottom: 4rem;
     width: 53rem;
@@ -817,8 +833,8 @@ form {
   }
   img {
     max-width: 100%;
-    padding: 0;
-    width: 45%;
+    padding: 5rem 3%;
+    width: 40%;
   }
 }
 
@@ -827,9 +843,10 @@ form {
 }
 
 .wireframing-cta {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
   max-width: 100%;
-  padding: 0 6%;
+  padding: 0 9%;
   width: 55rem;
   h2 {
     padding: 7rem 0 4rem;
@@ -856,7 +873,10 @@ form {
 }
 
 .branding-cta {
-  padding: 6% 6% 3%;
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 100%;
+  padding: 6% 9% 3%;
   width: 54rem;
   h2 {
     padding-bottom: 4rem;
@@ -866,7 +886,9 @@ form {
 .brand-image-wrap,
 .mockup-image-wrap {
   text-align: center;
-  width: 100%;
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .mockup-image-wrap > img {
@@ -885,11 +907,12 @@ form {
 }
 
 .branding-btn {
-  margin: 0 6%;
+  margin: 0 9%;
 }
 
 .mockup-cta {
-  padding: 0 6%;
+  padding: 0 9%;
+  max-width: 100%;
   width: 54rem;
   h2 {
     padding-bottom: 4rem;
@@ -994,18 +1017,91 @@ form {
     margin: 0 auto;
   }
 
+  .flows {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .flows-cta {
+    display: block;
+    margin: 0 auto;
+  }
+
   .flows > img {
     display: block;
     max-width: 100%;
     padding-top: 8rem;
     text-align: center;
-    width: 85%;
+    width: 64rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   html {
     font-size: 6px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 4rem !important;
+    line-height: 150% !important;
+  }
+
+  p {
+    font-size: 3rem;
+    line-height: 150%;
+  }
+
+  .hero {
+    height: 32vh;
+  }
+
+  section > li {
+    font-size: 3rem !important;
+    line-height: 150%;
+  }
+
+  .btn {
+    background: $primary-color;
+    border: solid 2px $primary-color;
+    color: $secondary-color;
+    font-family: $p-txt;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    padding: 1.2rem 2.5rem;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: $highlight3;
+    border: solid 2px $highlight3;
+    color: $primary-color;
+    transition: 0.3s;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+      margin: 5rem 0 0 4%;
+    }
+  }
+
+  .footer-btn {
+    background: $primary-color;
+    border: solid 2px $primary-color;
+    color: $secondary-color;
+    font-family: $p-txt;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 4rem 0;
+    padding: 1.2rem 8.5rem;
+    text-decoration: none;
   }
 
   section {
@@ -1030,14 +1126,43 @@ form {
     margin-top: -2rem;
   }
 
+  .comp-cta {
+    margin-left: 11%;
+  }
+
   .discovery > p {
-    width: 55rem;
+    max-width: 100%;
+    width: 50rem;
   }
 
   .left-section {
     display: block;
     max-width: 100%;
     margin: 0 auto;
+  }
+
+  .brand-image-wrap,
+  .mockup-image-wrap {
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .mockups,
+  .wireframing-cta,
+  .branding {
+    max-width: 100%;
+    width: 50rem;
+  }
+
+  .flows-cta {
+    margin: 0 6%;
+  }
+
+  .flows > img {
+    padding-top: 0;
+    width: 55rem;
   }
 
   .cloud-logos > img {
@@ -1060,6 +1185,15 @@ form {
   .portfolio-showcase {
     img {
       width: 100% !important;
+    }
+  }
+
+  .about-section {
+    h2 {
+      font-size: 6rem !important;
+    }
+    p {
+      font-size: 3rem;
     }
   }
 }
