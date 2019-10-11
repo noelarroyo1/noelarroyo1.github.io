@@ -30,6 +30,28 @@ p::selection {
   letter-spacing: 2px;
 }
 
+.hero-btns {
+  display: inline-block;
+}
+
+.hero-btn-right {
+  background: #111;
+  border: solid 2px $primary-color;
+  color: $primary-color;
+  font-family: $p-txt;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 15px;
+  padding: 0.8rem 5rem;
+  text-decoration: none;
+}
+
+.hero-btn-right:hover {
+  background: $primary-color;
+  color: $secondary-color;
+  transition: all 0.4s;
+}
+
 h1 {
   font-family: $headers;
   font-size: 5rem;
@@ -1063,7 +1085,7 @@ form {
   }
 
   .hero {
-    height: 32vh;
+    height: 35vh;
   }
 
   section > li {
@@ -1080,6 +1102,20 @@ form {
     font-weight: bold;
     margin: 2rem 0;
     padding: 1.2rem 2.5rem;
+    text-decoration: none;
+  }
+
+  .hero-btn-right {
+    display: block;
+    text-align: center;
+    background: #111;
+    border: solid 2px $primary-color;
+    color: $primary-color;
+    font-family: $p-txt;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5rem 0;
+    padding: 2.2rem 2.5rem;
     text-decoration: none;
   }
 
@@ -1130,7 +1166,7 @@ form {
 
   .bg-txt-dev {
     font-size: 8rem;
-    margin-top: -2rem;
+    margin-top: -7rem;
   }
 
   .comp-cta {

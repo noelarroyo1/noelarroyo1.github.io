@@ -172,6 +172,29 @@ p::selection {
   letter-spacing: 2px;
 }
 
+.hero-btns {
+  display: inline-block;
+}
+
+.hero-btn-right {
+  background: #111;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-left: 15px;
+  padding: 0.8rem 5rem;
+  text-decoration: none;
+}
+
+.hero-btn-right:hover {
+  background: #ffffff;
+  color: #111111;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 h1 {
   font-family: "Lora", serif;
   font-size: 5rem;
@@ -1274,7 +1297,7 @@ form textarea {
     line-height: 150%;
   }
   .hero {
-    height: 32vh;
+    height: 35vh;
   }
   section > li {
     font-size: 3rem !important;
@@ -1289,6 +1312,19 @@ form textarea {
     font-weight: bold;
     margin: 2rem 0;
     padding: 1.2rem 2.5rem;
+    text-decoration: none;
+  }
+  .hero-btn-right {
+    display: block;
+    text-align: center;
+    background: #111;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 5rem 0;
+    padding: 2.2rem 2.5rem;
     text-decoration: none;
   }
   .btn:hover {
@@ -1336,7 +1372,7 @@ form textarea {
   }
   .bg-txt-dev {
     font-size: 8rem;
-    margin-top: -2rem;
+    margin-top: -7rem;
   }
   .comp-cta {
     margin-left: 11%;
