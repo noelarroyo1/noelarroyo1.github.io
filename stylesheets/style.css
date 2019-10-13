@@ -232,12 +232,11 @@ p {
   padding: 1.8rem 0 2rem;
 }
 
-img {
-  padding-top: 8rem;
-}
-
 section {
   position: relative;
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -461,9 +460,8 @@ footer i {
 .hero {
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
-  border-bottom: solid 1px #ffffff;
   height: 50vh;
-  padding: 19rem 0 2rem 12%;
+  padding: 19rem 0;
 }
 
 .txt-type > .txt {
@@ -562,10 +560,11 @@ footer i {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0 2rem 20rem 2rem;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 20rem;
+  max-width: 100%;
 }
 
 .project p {
@@ -578,7 +577,6 @@ footer i {
 }
 
 .jybe-intro {
-  padding-top: 5rem;
   width: 48rem;
 }
 
@@ -591,12 +589,12 @@ footer i {
   width: 50rem;
 }
 
-.bg-txt {
+.bg-txt,
+.bg-txt-ux, .bg-txt-dev, .bg-txt-process, .bg-txt-design, .bg-txt-specs, .bg-txt-project, .bg-txt-conclusion {
   color: #333333;
   font-family: "Montserrat", sans-serif;
   font-size: 12rem;
   font-weight: 800;
-  margin: 10rem 0 0 -2rem;
   max-width: 100vw;
   overflow: hidden;
   position: absolute;
@@ -604,17 +602,33 @@ footer i {
   z-index: -1;
 }
 
+.bg-txt,
+.bg-txt-ux {
+  margin: 13rem 0 0 -2rem;
+}
+
 .bg-txt-dev {
-  color: #333333;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12rem;
-  font-weight: 800;
-  margin: -4rem 0 0 -2rem;
-  max-width: 100vw;
-  overflow: hidden;
-  position: absolute;
-  text-transform: uppercase;
-  z-index: -1;
+  margin: -8rem 0 0 -2rem;
+}
+
+.bg-txt-process {
+  margin: -13rem 0 0 -1rem;
+}
+
+.bg-txt-design {
+  margin: -7rem 0 0 -1rem;
+}
+
+.bg-txt-specs {
+  margin: 11rem 0 0 -2rem;
+}
+
+.bg-txt-project {
+  margin: -13rem 0 0 -2rem;
+}
+
+.bg-txt-conclusion {
+  margin: -13rem 0 0 -2rem;
 }
 
 .footer-btn {
@@ -649,10 +663,6 @@ footer i {
       justify-content: space-around;
   padding: 18rem 0 15rem 0rem;
   width: 100%;
-}
-
-.contact-hero {
-  padding-left: 8%;
 }
 
 .contact-hero h2 {
@@ -749,6 +759,27 @@ form textarea {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 1440px) {
+  section,
+  .project {
+    width: 1280px;
+  }
+  .logo {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  section,
+  .project {
+    width: 1080px;
+  }
+  .mockup-image-wrap img {
+    max-width: 100%;
+    width: 45rem;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   html {
     font-size: 8px;
@@ -778,9 +809,11 @@ form textarea {
 }
 
 .about-hero {
+  border-bottom: 1px solid #ffffff;
   color: white;
   position: relative;
   text-align: center;
+  width: 100%;
 }
 
 .about-hero h2 {
@@ -791,7 +824,6 @@ form textarea {
 }
 
 .about-hero img {
-  border-bottom: solid 1px #ffffff;
   width: 100%;
 }
 
@@ -801,7 +833,8 @@ form textarea {
 
 .about-section {
   margin: 0 auto 19.5rem;
-  width: 75%;
+  width: 80rem;
+  max-width: 100%;
 }
 
 .about-section h2 {
@@ -819,14 +852,14 @@ form textarea {
 
 .about-section p {
   font-size: 2.2rem;
-  line-height: 140%;
+  line-height: 150%;
 }
 
 .about-section span {
   font-size: 1.5rem;
 }
 
-.project-hero, .comp-analysis, .personas, .stories, .flows {
+.project-hero, .overview, .comp-analysis, .personas, .stories, .flows {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -837,18 +870,15 @@ form textarea {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 15rem 0rem 20rem 0;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 20rem 0;
+  max-width: 100%;
 }
 
 .project-hero {
-  border-bottom: solid 1px #ffffff;
-}
-
-.project-cta {
-  padding: 0 0 0 5rem;
+  padding-top: 15rem;
 }
 
 .jybe-ipad {
@@ -868,7 +898,7 @@ form textarea {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  padding-top: 15rem;
+  padding: 15rem 0;
   max-width: 100%;
 }
 
@@ -897,21 +927,10 @@ form textarea {
 }
 
 .overview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 5rem 0rem 10rem 0;
-  width: 100%;
+  max-width: 100%;
 }
 
 .problem-solution {
-  padding: 3rem 0 0 0;
   width: 55rem;
   max-width: 100%;
 }
@@ -935,14 +954,7 @@ form textarea {
 .discovery {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  padding: 7rem 10% 10rem;
+  padding: 0 0 10rem;
   max-width: 100%;
 }
 
@@ -973,7 +985,6 @@ form textarea {
 }
 
 .comp-analysis {
-  max-width: 95%;
   padding-top: 0;
 }
 
@@ -990,7 +1001,7 @@ form textarea {
 }
 
 .right-section {
-  padding-top: 5rem;
+  margin: 0 5rem 0 0;
   text-align: center;
 }
 
@@ -1024,12 +1035,7 @@ form textarea {
 }
 
 .persona-doc {
-  padding: 0 !important;
   width: 25rem;
-}
-
-.persona-col {
-  margin-top: 8rem;
 }
 
 .stories {
@@ -1049,9 +1055,6 @@ form textarea {
 
 .flows {
   max-width: 100%;
-  margin: 0 auto;
-  width: 170rem;
-  padding: 0;
 }
 
 .flows p {
@@ -1065,7 +1068,7 @@ form textarea {
 
 .flows img {
   max-width: 100%;
-  padding: 5rem 3%;
+  padding: 0;
   width: 40%;
 }
 
@@ -1074,20 +1077,8 @@ form textarea {
 }
 
 .wireframing-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
   max-width: 100%;
-  padding: 0 9%;
   width: 55rem;
-}
-
-.wireframing-cta h2 {
-  padding: 7rem 0 4rem;
 }
 
 .image-wrapper {
@@ -1113,27 +1104,22 @@ form textarea {
 }
 
 .branding-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  max-width: 100%;
-  padding: 6% 9% 3%;
-  width: 54rem;
+  width: 55rem;
 }
 
 .branding-cta h2 {
   padding-bottom: 4rem;
 }
 
+.branding-btn {
+  margin: 5rem auto 0;
+  text-align: center;
+}
+
 .brand-image-wrap,
 .mockup-image-wrap {
   text-align: center;
   max-width: 100%;
-  width: 80%;
   margin: auto;
 }
 
@@ -1152,14 +1138,9 @@ form textarea {
   padding: 3rem;
 }
 
-.branding-btn {
-  margin: 0 9%;
-}
-
 .mockup-cta {
-  padding: 0 9%;
   max-width: 100%;
-  width: 54rem;
+  width: 55rem;
 }
 
 .mockup-cta h2 {
@@ -1173,7 +1154,7 @@ form textarea {
 }
 
 .btn-wrapper {
-  margin: 8rem 0 20rem;
+  margin: 5rem 0 20rem;
   text-align: center;
 }
 
@@ -1183,25 +1164,19 @@ form textarea {
 
 .conclusion {
   margin-bottom: 15rem;
-  padding: 0 6%;
 }
 
 .conclusion .summary {
   margin: 0 auto;
-  padding-top: 8rem;
-  width: 63rem;
+  width: 60rem;
+  max-width: 100%;
 }
 
 .up-next {
   margin-bottom: 15rem;
 }
 
-.up-next a {
-  margin-left: 8%;
-}
-
 .up-next-cta {
-  padding: 0 6%;
   width: 54rem;
   max-width: 100%;
 }
@@ -1217,7 +1192,7 @@ form textarea {
 }
 
 .portfolio-showcase {
-  padding: 4rem 6%;
+  padding: 4rem 0;
   text-align: left;
 }
 
@@ -1235,6 +1210,21 @@ form textarea {
 
 .portfolio-showcase .cr-sign {
   width: 30rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero {
+    width: 90rem;
+  }
+  .project {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 803px) {
+  .jybe-ipad {
+    margin: 8rem auto;
+  }
 }
 
 @media screen and (max-width: 786px) {
@@ -1258,7 +1248,7 @@ form textarea {
     margin: 0 auto;
   }
   .branding-btn {
-    margin: 6% 6% 0;
+    margin: 5rem auto 0;
     text-align: center;
   }
   .wireframing-cta {
@@ -1275,7 +1265,7 @@ form textarea {
   .flows > img {
     display: block;
     max-width: 100%;
-    padding-top: 8rem;
+    margin: 8rem auto;
     text-align: center;
     width: 64rem;
   }
@@ -1297,11 +1287,18 @@ form textarea {
     line-height: 150%;
   }
   .hero {
-    height: 35vh;
+    margin: 0 auto;
+    height: 20vh;
+    width: 55rem;
   }
-  section > li {
+  section li {
     font-size: 3rem !important;
+    width: 50rem;
+    max-width: 100%;
     line-height: 150%;
+  }
+  .discovery strong {
+    font-size: 3rem;
   }
   .btn {
     background: #ffffff;
@@ -1359,6 +1356,7 @@ form textarea {
   }
   section {
     padding-bottom: 5rem;
+    margin: 0 auto;
   }
   .jybe-iphone {
     width: 25rem;
@@ -1370,12 +1368,24 @@ form textarea {
     font-size: 8rem;
     margin-top: 10rem;
   }
+  .bg-txt-ux {
+    font-size: 10.5rem;
+    margin-top: 5rem;
+  }
   .bg-txt-dev {
     font-size: 8rem;
     margin-top: -7rem;
   }
-  .comp-cta {
-    margin-left: 11%;
+  .bg-txt-specs {
+    margin-top: 6rem;
+  }
+  .bg-txt-project {
+    font-size: 10rem;
+    margin: -10rem 0 0 -2rem;
+  }
+  .bg-txt-conclusion {
+    font-size: 9rem;
+    margin: -8rem 0 0 -2rem;
   }
   .discovery > p {
     max-width: 100%;
@@ -1386,25 +1396,19 @@ form textarea {
     max-width: 100%;
     margin: 0 auto;
   }
+  .mindmap {
+    padding: 0;
+  }
   .brand-image-wrap,
   .mockup-image-wrap {
     text-align: center;
     max-width: 100%;
-    width: 100%;
     margin: 0;
   }
-  .mockups,
   .wireframing-cta,
   .branding {
     max-width: 100%;
     width: 50rem;
-  }
-  .flows-cta {
-    margin: 0 6%;
-  }
-  .flows > img {
-    padding-top: 0;
-    width: 55rem;
   }
   .cloud-logos > img {
     width: 9rem;
@@ -1419,14 +1423,107 @@ form textarea {
   .summary {
     width: 55rem !important;
   }
-  .portfolio-showcase img {
-    width: 100% !important;
+  .portfolio-showcase {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .portfolio-showcase .mof-ad {
+    width: 55rem;
+    max-width: 100%;
+  }
+  .portfolio-showcase .scp-ad {
+    width: 55rem;
+    max-width: 100%;
+  }
+  .portfolio-showcase .cr-sign {
+    width: 55rem;
+    max-width: 100%;
+  }
+  .about-section {
+    width: 55rem;
+    margin: 1rem auto 5rem;
   }
   .about-section h2 {
     font-size: 6rem !important;
   }
   .about-section p {
     font-size: 3rem;
+  }
+  .project {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project p {
+    width: 55rem;
+  }
+  .project img {
+    margin-top: 8rem;
+    width: 55rem;
+  }
+  .project-cta,
+  .problem-solution,
+  .jybe-iphone,
+  .discovery,
+  .comp-cta,
+  .right-section,
+  .persona-cta,
+  .stories-left,
+  .col-50,
+  .flows-cta {
+    margin: 0 auto;
+  }
+  .project-hero {
+    padding-bottom: 0;
+  }
+  .discovery {
+    width: 55rem;
+  }
+  .btn-wrapper a {
+    margin: 2rem 0 4rem 4rem;
+  }
+  .flows-btn-wrapper a {
+    display: block;
+    padding: 2rem 3rem;
+  }
+  .flows-btn-wrapper .left-btn {
+    width: 23rem;
+  }
+  .flows-btn-wrapper .right-btn {
+    width: 29rem;
+  }
+  .image-wrapper .sketch3 {
+    width: 80%;
+  }
+  .persona-col {
+    text-align: center;
+  }
+  .persona-doc {
+    margin-top: 5rem;
+    width: 55rem;
+    max-width: 100%;
+  }
+  .flows > img {
+    width: 100%;
+    margin-bottom: 20rem;
+  }
+  .style-guide {
+    padding: 5rem 0 0 0;
+  }
+  .mockups {
+    margin: 0 auto;
+  }
+  .mockup-image-wrap img {
+    max-width: 100%;
+    width: 55rem;
+    padding: 2rem auto !important;
+    vertical-align: top;
+  }
+  .up-next a {
+    margin-left: 4rem;
+  }
+  .up-next-cta {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

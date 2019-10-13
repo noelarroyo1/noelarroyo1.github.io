@@ -89,12 +89,11 @@ p {
   padding: 1.8rem 0 2rem;
 }
 
-img {
-  padding-top: 8rem;
-}
-
 section {
   position: relative;
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 100%;
   z-index: 1;
 }
 
@@ -298,9 +297,8 @@ footer {
 
 .hero {
   animation: fadeIn 1s ease-in;
-  border-bottom: solid 1px $primary-color;
   height: 50vh;
-  padding: 19rem 0 2rem 12%;
+  padding: 19rem 0;
 }
 
 .txt-type > .txt {
@@ -368,9 +366,9 @@ footer {
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 0 2rem 20rem 2rem;
-  width: 100%;
+  justify-content: space-between;
+  padding: 0 0 20rem;
+  max-width: 100%;
 
   p {
     margin-bottom: 4rem;
@@ -383,7 +381,6 @@ footer {
 }
 
 .jybe-intro {
-  padding-top: 5rem;
   width: 48rem;
 }
 
@@ -396,12 +393,11 @@ footer {
   width: 50rem;
 }
 
-.bg-txt {
+%bg-txt-layout {
   color: $ternary-color;
   font-family: $bg-txt;
   font-size: 12rem;
   font-weight: 800;
-  margin: 10rem 0 0 -2rem;
   max-width: 100vw;
   overflow: hidden;
   position: absolute;
@@ -409,17 +405,40 @@ footer {
   z-index: -1;
 }
 
+.bg-txt,
+.bg-txt-ux {
+  @extend %bg-txt-layout;
+  margin: 13rem 0 0 -2rem;
+}
+
 .bg-txt-dev {
-  color: $ternary-color;
-  font-family: $bg-txt;
-  font-size: 12rem;
-  font-weight: 800;
-  margin: -4rem 0 0 -2rem;
-  max-width: 100vw;
-  overflow: hidden;
-  position: absolute;
-  text-transform: uppercase;
-  z-index: -1;
+  @extend %bg-txt-layout;
+  margin: -8rem 0 0 -2rem;
+}
+
+.bg-txt-process {
+  @extend %bg-txt-layout;
+  margin: -13rem 0 0 -1rem;
+}
+
+.bg-txt-design {
+  @extend %bg-txt-layout;
+  margin: -7rem 0 0 -1rem;
+}
+
+.bg-txt-specs {
+  @extend %bg-txt-layout;
+  margin: 11rem 0 0 -2rem;
+}
+
+.bg-txt-project {
+  @extend %bg-txt-layout;
+  margin: -13rem 0 0 -2rem;
+}
+
+.bg-txt-conclusion {
+  @extend %bg-txt-layout;
+  margin: -13rem 0 0 -2rem;
 }
 
 // .testimonials {
@@ -494,7 +513,6 @@ footer {
 }
 
 .contact-hero {
-  padding-left: 8%;
   h2 {
     font-size: 4.8rem;
     font-weight: 600;
@@ -584,6 +602,31 @@ form {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 1440px) {
+  section,
+  .project {
+    width: 1280px;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  section,
+  .project {
+    width: 1080px;
+  }
+
+  .mockup-image-wrap {
+    img {
+      max-width: 100%;
+      width: 45rem;
+    }
+  }
+}
+
 @media screen and (max-width: 1100px) {
   html {
     font-size: 8px;
@@ -620,9 +663,11 @@ form {
 // ABOUT PAGE ////////////////////////////
 
 .about-hero {
+  border-bottom: 1px solid $primary-color;
   color: white;
   position: relative;
   text-align: center;
+  width: 100%;
   h2 {
     font-size: 5rem;
     bottom: 25%;
@@ -630,7 +675,6 @@ form {
     position: absolute;
   }
   img {
-    border-bottom: solid 1px $primary-color;
     width: 100%;
   }
 }
@@ -641,8 +685,8 @@ form {
 
 .about-section {
   margin: 0 auto 19.5rem;
-  width: 75%;
-
+  width: 80rem;
+  max-width: 100%;
   h2 {
     font-size: 4.8rem;
     font-weight: 600;
@@ -656,7 +700,7 @@ form {
   }
   p {
     font-size: 2.2rem;
-    line-height: 140%;
+    line-height: 150%;
   }
   span {
     font-size: 1.5rem;
@@ -669,18 +713,14 @@ form {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 15rem 0rem 20rem 0;
-  width: 100%;
+  justify-content: space-between;
+  padding: 0 0 20rem 0;
+  max-width: 100%;
 }
 
 .project-hero {
   @extend %flex-layout;
-  border-bottom: solid 1px $primary-color;
-}
-
-.project-cta {
-  padding: 0 0 0 5rem;
+  padding-top: 15rem;
 }
 
 .jybe-ipad {
@@ -693,7 +733,7 @@ form {
   flex-flow: row wrap;
   justify-content: center;
   justify-items: center;
-  padding-top: 15rem;
+  padding: 15rem 0;
   max-width: 100%;
   > div {
     box-sizing: border-box;
@@ -717,15 +757,11 @@ form {
 }
 
 .overview {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 5rem 0rem 10rem 0;
-  width: 100%;
+  @extend %flex-layout;
+  max-width: 100%;
 }
 
 .problem-solution {
-  padding: 3rem 0 0 0;
   width: 55rem;
   max-width: 100%;
   h2 {
@@ -746,9 +782,7 @@ form {
 
 .discovery {
   box-sizing: border-box;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 7rem 10% 10rem;
+  padding: 0 0 10rem;
   max-width: 100%;
   h2 {
     font-family: $headers;
@@ -776,7 +810,6 @@ form {
 
 .comp-analysis {
   @extend %flex-layout;
-  max-width: 95%;
   padding-top: 0;
   p {
     width: 55rem;
@@ -792,7 +825,7 @@ form {
 }
 
 .right-section {
-  padding-top: 5rem;
+  margin: 0 5rem 0 0;
   text-align: center;
   .cloud-logos {
     margin-bottom: 5rem;
@@ -825,12 +858,7 @@ form {
 }
 
 .persona-doc {
-  padding: 0 !important;
   width: 25rem;
-}
-
-.persona-col {
-  margin-top: 8rem;
 }
 
 .stories {
@@ -850,9 +878,6 @@ form {
 .flows {
   @extend %flex-layout;
   max-width: 100%;
-  margin: 0 auto;
-  width: 170rem;
-  padding: 0;
   p {
     margin-bottom: 4rem;
     width: 53rem;
@@ -862,7 +887,7 @@ form {
   }
   img {
     max-width: 100%;
-    padding: 5rem 3%;
+    padding: 0;
     width: 40%;
   }
 }
@@ -872,14 +897,8 @@ form {
 }
 
 .wireframing-cta {
-  display: flex;
-  flex-flow: column wrap;
   max-width: 100%;
-  padding: 0 9%;
   width: 55rem;
-  h2 {
-    padding: 7rem 0 4rem;
-  }
 }
 
 .image-wrapper {
@@ -902,21 +921,21 @@ form {
 }
 
 .branding-cta {
-  display: flex;
-  flex-flow: column wrap;
-  max-width: 100%;
-  padding: 6% 9% 3%;
-  width: 54rem;
+  width: 55rem;
   h2 {
     padding-bottom: 4rem;
   }
+}
+
+.branding-btn {
+  margin: 5rem auto 0;
+  text-align: center;
 }
 
 .brand-image-wrap,
 .mockup-image-wrap {
   text-align: center;
   max-width: 100%;
-  width: 80%;
   margin: auto;
 }
 
@@ -935,14 +954,9 @@ form {
   padding: 3rem;
 }
 
-.branding-btn {
-  margin: 0 9%;
-}
-
 .mockup-cta {
-  padding: 0 9%;
   max-width: 100%;
-  width: 54rem;
+  width: 55rem;
   h2 {
     padding-bottom: 4rem;
   }
@@ -957,7 +971,7 @@ form {
 }
 
 .btn-wrapper {
-  margin: 8rem 0 20rem;
+  margin: 5rem 0 20rem;
   text-align: center;
   a {
     margin: 0 4rem 0 0;
@@ -966,22 +980,17 @@ form {
 
 .conclusion {
   margin-bottom: 15rem;
-  padding: 0 6%;
   .summary {
     margin: 0 auto;
-    padding-top: 8rem;
-    width: 63rem;
+    width: 60rem;
+    max-width: 100%;
   }
 }
 .up-next {
   margin-bottom: 15rem;
-  a {
-    margin-left: 8%;
-  }
 }
 
 .up-next-cta {
-  padding: 0 6%;
   width: 54rem;
   max-width: 100%;
   h2 {
@@ -995,7 +1004,7 @@ form {
 }
 
 .portfolio-showcase {
-  padding: 4rem 6%;
+  padding: 4rem 0;
   text-align: left;
   img {
     padding: 1rem;
@@ -1010,6 +1019,21 @@ form {
 
   .cr-sign {
     width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero {
+    width: 90rem;
+  }
+  .project {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 803px) {
+  .jybe-ipad {
+    margin: 8rem auto;
   }
 }
 
@@ -1038,7 +1062,7 @@ form {
   }
 
   .branding-btn {
-    margin: 6% 6% 0;
+    margin: 5rem auto 0;
     text-align: center;
   }
 
@@ -1059,7 +1083,7 @@ form {
   .flows > img {
     display: block;
     max-width: 100%;
-    padding-top: 8rem;
+    margin: 8rem auto;
     text-align: center;
     width: 64rem;
   }
@@ -1085,12 +1109,24 @@ form {
   }
 
   .hero {
-    height: 35vh;
+    margin: 0 auto;
+    height: 20vh;
+    width: 55rem;
   }
 
-  section > li {
-    font-size: 3rem !important;
-    line-height: 150%;
+  section {
+    li {
+      font-size: 3rem !important;
+      width: 50rem;
+      max-width: 100%;
+      line-height: 150%;
+    }
+  }
+
+  .discovery {
+    strong {
+      font-size: 3rem;
+    }
   }
 
   .btn {
@@ -1149,6 +1185,7 @@ form {
 
   section {
     padding-bottom: 5rem;
+    margin: 0 auto;
   }
 
   .jybe-iphone {
@@ -1164,13 +1201,28 @@ form {
     margin-top: 10rem;
   }
 
+  .bg-txt-ux {
+    font-size: 10.5rem;
+    margin-top: 5rem;
+  }
+
   .bg-txt-dev {
     font-size: 8rem;
     margin-top: -7rem;
   }
 
-  .comp-cta {
-    margin-left: 11%;
+  .bg-txt-specs {
+    margin-top: 6rem;
+  }
+
+  .bg-txt-project {
+    font-size: 10rem;
+    margin: -10rem 0 0 -2rem;
+  }
+
+  .bg-txt-conclusion {
+    font-size: 9rem;
+    margin: -8rem 0 0 -2rem;
   }
 
   .discovery > p {
@@ -1184,28 +1236,21 @@ form {
     margin: 0 auto;
   }
 
+  .mindmap {
+    padding: 0;
+  }
+
   .brand-image-wrap,
   .mockup-image-wrap {
     text-align: center;
     max-width: 100%;
-    width: 100%;
     margin: 0;
   }
 
-  .mockups,
   .wireframing-cta,
   .branding {
     max-width: 100%;
     width: 50rem;
-  }
-
-  .flows-cta {
-    margin: 0 6%;
-  }
-
-  .flows > img {
-    padding-top: 0;
-    width: 55rem;
   }
 
   .cloud-logos > img {
@@ -1226,17 +1271,130 @@ form {
   }
 
   .portfolio-showcase {
-    img {
-      width: 100% !important;
+    margin: 0 auto;
+    text-align: center;
+    .mof-ad {
+      width: 55rem;
+      max-width: 100%;
+    }
+
+    .scp-ad {
+      width: 55rem;
+      max-width: 100%;
+    }
+
+    .cr-sign {
+      width: 55rem;
+      max-width: 100%;
     }
   }
 
   .about-section {
+    width: 55rem;
+    margin: 1rem auto 5rem;
     h2 {
       font-size: 6rem !important;
     }
     p {
       font-size: 3rem;
     }
+  }
+
+  .project {
+    justify-content: center;
+    p {
+      width: 55rem;
+    }
+    img {
+      margin-top: 8rem;
+      width: 55rem;
+    }
+  }
+
+  .project-cta,
+  .problem-solution,
+  .jybe-iphone,
+  .discovery,
+  .comp-cta,
+  .right-section,
+  .persona-cta,
+  .stories-left,
+  .col-50,
+  .flows-cta {
+    margin: 0 auto;
+  }
+
+  .project-hero {
+    padding-bottom: 0;
+  }
+
+  .discovery {
+    width: 55rem;
+  }
+
+  .btn-wrapper {
+    a {
+      margin: 2rem 0 4rem 4rem;
+    }
+  }
+
+  .flows-btn-wrapper {
+    a {
+      display: block;
+      padding: 2rem 3rem;
+    }
+    .left-btn {
+      width: 23rem;
+    }
+    .right-btn {
+      width: 29rem;
+    }
+  }
+
+  .image-wrapper {
+    .sketch3 {
+      width: 80%;
+    }
+  }
+
+  .persona-col {
+    text-align: center;
+  }
+
+  .persona-doc {
+    margin-top: 5rem;
+    width: 55rem;
+    max-width: 100%;
+  }
+
+  .flows > img {
+    width: 100%;
+    margin-bottom: 20rem;
+  }
+
+  .style-guide {
+    padding: 5rem 0 0 0;
+  }
+
+  .mockups {
+    margin: 0 auto;
+  }
+
+  .mockup-image-wrap {
+    img {
+      max-width: 100%;
+      width: 55rem;
+      padding: 2rem auto !important;
+      vertical-align: top;
+    }
+  }
+
+  .up-next {
+    a {
+      margin-left: 4rem;
+    }
+  }
+  .up-next-cta {
+    margin: 0 auto;
   }
 }
