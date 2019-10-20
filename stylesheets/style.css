@@ -1271,6 +1271,181 @@ form textarea {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 10vh;
+  }
+  .project {
+    width: 720px;
+  }
+  .jybe-intro {
+    width: 46rem;
+  }
+  .single-img {
+    width: 45rem;
+  }
+  .gdii {
+    width: 45rem;
+  }
+}
+
+.project-hero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15rem 0 0;
+}
+
+.overview {
+  width: 720px;
+}
+
+.jybe-iphone {
+  width: 22rem;
+}
+
+.discovery {
+  padding-left: 3rem;
+}
+
+.comp-analysis {
+  width: 720px;
+}
+
+.cloud-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cloud-logos img {
+  width: 7rem;
+}
+
+.personas {
+  width: 720px;
+}
+
+.persona-doc {
+  width: 35rem;
+  padding: 8rem 3rem 5rem;
+}
+
+.stories {
+  width: 720px;
+}
+
+.flows {
+  width: 720px;
+}
+
+.flows img {
+  margin: 8rem auto 12rem;
+}
+
+.flows-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 720px;
+}
+
+.wireframing {
+  width: 720px;
+}
+
+.wireframing-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0;
+}
+
+.image-wrapper .sketch1,
+.image-wrapper .sketch2 {
+  width: 67rem;
+}
+
+.branding {
+  width: 720px;
+}
+
+.branding-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0;
+}
+
+.mockups {
+  width: 720px;
+}
+
+.mockup-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0;
+}
+
+.up-next {
+  width: 720px;
+}
+
+.up-next-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0;
+}
+
+.portfolio-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-showcase .mof-ad,
+.portfolio-showcase .scp-ad,
+.portfolio-showcase .cr-sign {
+  width: 80rem;
+}
+
 @media screen and (max-width: 550px) {
   html {
     font-size: 6px;
@@ -1296,6 +1471,9 @@ form textarea {
     width: 50rem;
     max-width: 100%;
     line-height: 150%;
+  }
+  .discovery {
+    padding: 0;
   }
   .discovery strong {
     font-size: 3rem;
@@ -1341,7 +1519,7 @@ form textarea {
             flex-flow: row wrap;
   }
   .btn-wrapper a {
-    margin: 5rem 0 0 4%;
+    margin: 5rem 0 0 0;
   }
   .footer-btn {
     background: #ffffff;
@@ -1410,7 +1588,13 @@ form textarea {
     max-width: 100%;
     width: 50rem;
   }
-  .cloud-logos > img {
+  .cloud-logos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cloud-logos img {
     width: 9rem;
   }
   .cloud-logos > img:nth-child(3) {
@@ -1479,9 +1663,6 @@ form textarea {
   .discovery {
     width: 55rem;
   }
-  .btn-wrapper a {
-    margin: 2rem 0 4rem 4rem;
-  }
   .flows-btn-wrapper a {
     display: block;
     padding: 2rem 3rem;
@@ -1492,37 +1673,56 @@ form textarea {
   .flows-btn-wrapper .right-btn {
     width: 29rem;
   }
-  .image-wrapper .sketch3 {
-    width: 80%;
-  }
   .persona-col {
     text-align: center;
   }
   .persona-doc {
     margin-top: 5rem;
+    padding: 0;
     width: 55rem;
     max-width: 100%;
   }
-  .flows > img {
+  .flows {
+    width: 315px;
+  }
+  .flows img {
     width: 100%;
     margin-bottom: 20rem;
+  }
+  .wireframing {
+    width: 315px;
+  }
+  .image-wrapper img {
+    padding: 3rem 0;
+    width: 100%;
+  }
+  .image-wrapper .sketch3 {
+    width: 100%;
+  }
+  .branding {
+    width: 315px;
   }
   .style-guide {
     padding: 5rem 0 0 0;
   }
   .mockups {
+    width: 315px;
     margin: 0 auto;
   }
   .mockup-image-wrap img {
     max-width: 100%;
     width: 55rem;
-    padding: 2rem auto !important;
+    padding: 2rem 0;
     vertical-align: top;
   }
   .up-next a {
     margin-left: 4rem;
   }
   .up-next-cta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
   }
 }

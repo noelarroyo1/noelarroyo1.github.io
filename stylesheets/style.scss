@@ -1089,6 +1089,166 @@ form {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 10vh;
+  }
+
+  .project {
+    width: 720px;
+  }
+
+  .jybe-intro {
+    width: 46rem;
+  }
+
+  .single-img {
+    width: 45rem;
+  }
+
+  .gdii {
+    width: 45rem;
+  }
+}
+
+///////////////////// WORK PAGE - HERO 768px width /////////////////
+
+.project-hero {
+  flex-direction: column;
+  padding: 15rem 0 0;
+}
+
+///////////////////// WORK PAGE - OVERVIEW 768px width ///////////////
+.overview {
+  width: 720px;
+}
+
+.jybe-iphone {
+  width: 22rem;
+}
+
+///////////////////// WORK PAGE - DISCOVERY 768px width //////////////
+
+.discovery {
+  padding-left: 3rem;
+}
+
+///////////////////// WORK PAGE - COMP ANALYSIS 768px width ////////////
+
+.comp-analysis {
+  width: 720px;
+}
+
+.cloud-logos {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  img {
+    width: 7rem;
+  }
+}
+
+///////////////////// WORK PAGE - USER PERSONAS 768px width ////////////
+
+.personas {
+  width: 720px;
+}
+
+.persona-doc {
+  width: 35rem;
+  padding: 8rem 3rem 5rem;
+}
+
+///////////////////// WORK PAGE - STORIES 768px width ////////////
+
+.stories {
+  width: 720px;
+}
+
+///////////////////// WORK PAGE - FLOWS 768px width ////////////
+
+.flows {
+  width: 720px;
+
+  img {
+    margin: 8rem auto 12rem;
+  }
+}
+
+.flows-cta {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 720px;
+}
+
+///////////////////// WORK PAGE - WIREFRAMES 768px width ////////////
+
+.wireframing {
+  width: 720px;
+}
+
+.wireframing-cta {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.image-wrapper {
+  .sketch1,
+  .sketch2 {
+    width: 67rem;
+  }
+}
+
+///////////////////// WORK PAGE - WIREFRAMES 768px width ////////////
+
+.branding {
+  width: 720px;
+}
+
+.branding-cta {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+///////////////////// WORK PAGE - MOCKUPS 768px width ////////////
+
+.mockups {
+  width: 720px;
+}
+
+.mockup-cta {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+///////////////////// WORK PAGE - UP-NEXT 768px width ////////////
+
+.up-next {
+  width: 720px;
+}
+
+.up-next-cta {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.portfolio-showcase {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  .mof-ad,
+  .scp-ad,
+  .cr-sign {
+    width: 80rem;
+  }
+}
+
 @media screen and (max-width: 550px) {
   html {
     font-size: 6px;
@@ -1124,6 +1284,7 @@ form {
   }
 
   .discovery {
+    padding: 0;
     strong {
       font-size: 3rem;
     }
@@ -1167,7 +1328,7 @@ form {
     flex-flow: row wrap;
 
     a {
-      margin: 5rem 0 0 4%;
+      margin: 5rem 0 0 0;
     }
   }
 
@@ -1253,8 +1414,12 @@ form {
     width: 50rem;
   }
 
-  .cloud-logos > img {
-    width: 9rem;
+  .cloud-logos {
+    flex-direction: row;
+
+    img {
+      width: 9rem;
+    }
   }
 
   .cloud-logos > img:nth-child(3) {
@@ -1332,12 +1497,6 @@ form {
     width: 55rem;
   }
 
-  .btn-wrapper {
-    a {
-      margin: 2rem 0 4rem 4rem;
-    }
-  }
-
   .flows-btn-wrapper {
     a {
       display: block;
@@ -1351,25 +1510,42 @@ form {
     }
   }
 
-  .image-wrapper {
-    .sketch3 {
-      width: 80%;
-    }
-  }
-
   .persona-col {
     text-align: center;
   }
 
   .persona-doc {
     margin-top: 5rem;
+    padding: 0;
     width: 55rem;
     max-width: 100%;
   }
 
-  .flows > img {
-    width: 100%;
-    margin-bottom: 20rem;
+  .flows {
+    width: 315px;
+    img {
+      width: 100%;
+      margin-bottom: 20rem;
+    }
+  }
+
+  .wireframing {
+    width: 315px;
+  }
+
+  .image-wrapper {
+    img {
+      padding: 3rem 0;
+      width: 100%;
+    }
+
+    .sketch3 {
+      width: 100%;
+    }
+  }
+
+  .branding {
+    width: 315px;
   }
 
   .style-guide {
@@ -1377,6 +1553,7 @@ form {
   }
 
   .mockups {
+    width: 315px;
     margin: 0 auto;
   }
 
@@ -1384,7 +1561,7 @@ form {
     img {
       max-width: 100%;
       width: 55rem;
-      padding: 2rem auto !important;
+      padding: 2rem 0;
       vertical-align: top;
     }
   }
@@ -1395,6 +1572,7 @@ form {
     }
   }
   .up-next-cta {
+    flex-direction: column;
     margin: 0 auto;
   }
 }
