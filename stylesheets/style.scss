@@ -608,6 +608,14 @@ form {
     width: 1280px;
   }
 
+  .project-hero {
+    flex-direction: row;
+  }
+
+  .overview {
+    width: 1280px !important;
+  }
+
   .logo {
     padding-left: 10%;
   }
@@ -663,7 +671,6 @@ form {
 // ABOUT PAGE ////////////////////////////
 
 .about-hero {
-  border-bottom: 1px solid $primary-color;
   color: white;
   position: relative;
   text-align: center;
