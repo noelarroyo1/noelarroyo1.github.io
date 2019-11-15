@@ -1116,143 +1116,143 @@ form {
   .gdii {
     width: 45rem;
   }
-}
 
-///////////////////// WORK PAGE - HERO 768px width /////////////////
+  ///////////////////// WORK PAGE - HERO 768px width /////////////////
 
-.project-hero {
-  flex-direction: column;
-  padding: 15rem 0 0;
-}
-
-///////////////////// WORK PAGE - OVERVIEW 768px width ///////////////
-.overview {
-  width: 720px;
-}
-
-.jybe-iphone {
-  width: 22rem;
-}
-
-///////////////////// WORK PAGE - DISCOVERY 768px width //////////////
-
-.discovery {
-  padding-left: 3rem;
-}
-
-///////////////////// WORK PAGE - COMP ANALYSIS 768px width ////////////
-
-.comp-analysis {
-  width: 720px;
-}
-
-.cloud-logos {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-
-  img {
-    width: 7rem;
+  .project-hero {
+    flex-direction: column;
+    padding: 15rem 0 0;
   }
-}
 
-///////////////////// WORK PAGE - USER PERSONAS 768px width ////////////
-
-.personas {
-  width: 720px;
-}
-
-.persona-doc {
-  width: 35rem;
-  padding: 8rem 3rem 5rem;
-}
-
-///////////////////// WORK PAGE - STORIES 768px width ////////////
-
-.stories {
-  width: 720px;
-}
-
-///////////////////// WORK PAGE - FLOWS 768px width ////////////
-
-.flows {
-  width: 720px;
-
-  img {
-    margin: 8rem auto 12rem;
+  ///////////////////// WORK PAGE - OVERVIEW 768px width ///////////////
+  .overview {
+    width: 720px;
   }
-}
 
-.flows-cta {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 720px;
-}
-
-///////////////////// WORK PAGE - WIREFRAMES 768px width ////////////
-
-.wireframing {
-  width: 720px;
-}
-
-.wireframing-cta {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-}
-
-.image-wrapper {
-  .sketch1,
-  .sketch2 {
-    width: 67rem;
+  .jybe-iphone {
+    width: 22rem;
   }
-}
 
-///////////////////// WORK PAGE - WIREFRAMES 768px width ////////////
+  ///////////////////// WORK PAGE - DISCOVERY 768px width //////////////
 
-.branding {
-  width: 720px;
-}
+  .discovery {
+    padding-left: 3rem;
+  }
 
-.branding-cta {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-}
+  ///////////////////// WORK PAGE - COMP ANALYSIS 768px width ////////////
 
-///////////////////// WORK PAGE - MOCKUPS 768px width ////////////
+  .comp-analysis {
+    width: 720px;
+  }
 
-.mockups {
-  width: 720px;
-}
+  .cloud-logos {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 
-.mockup-cta {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-}
+    img {
+      width: 7rem;
+    }
+  }
 
-///////////////////// WORK PAGE - UP-NEXT 768px width ////////////
+  ///////////////////// WORK PAGE - USER PERSONAS 768px width ////////////
 
-.up-next {
-  width: 720px;
-}
+  .personas {
+    width: 720px;
+  }
 
-.up-next-cta {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0;
-}
+  .persona-doc {
+    width: 35rem;
+    padding: 8rem 3rem 5rem;
+  }
 
-.portfolio-showcase {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  ///////////////////// WORK PAGE - STORIES 768px width ////////////
 
-  .mof-ad,
-  .scp-ad,
-  .cr-sign {
-    width: 80rem;
+  .stories {
+    width: 720px;
+  }
+
+  ///////////////////// WORK PAGE - FLOWS 768px width ////////////
+
+  .flows {
+    width: 720px;
+
+    img {
+      margin: 8rem auto 12rem;
+    }
+  }
+
+  .flows-cta {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 720px;
+  }
+
+  ///////////////////// WORK PAGE - WIREFRAMES 768px width ////////////
+
+  .wireframing {
+    width: 720px;
+  }
+
+  .wireframing-cta {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  .image-wrapper {
+    .sketch1,
+    .sketch2 {
+      width: 67rem;
+    }
+  }
+
+  ///////////////////// WORK PAGE - WIREFRAMES 768px width ////////////
+
+  .branding {
+    width: 720px;
+  }
+
+  .branding-cta {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  ///////////////////// WORK PAGE - MOCKUPS 768px width ////////////
+
+  .mockups {
+    width: 720px;
+  }
+
+  .mockup-cta {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  ///////////////////// WORK PAGE - UP-NEXT 768px width ////////////
+
+  .up-next {
+    width: 720px;
+  }
+
+  .up-next-cta {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+  .portfolio-showcase {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    .mof-ad,
+    .scp-ad,
+    .cr-sign {
+      width: 80rem;
+    }
   }
 }
 

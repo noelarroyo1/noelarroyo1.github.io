@@ -1295,163 +1295,139 @@ form textarea {
   .gdii {
     width: 45rem;
   }
-}
-
-.project-hero {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 15rem 0 0;
-}
-
-.overview {
-  width: 720px;
-}
-
-.jybe-iphone {
-  width: 22rem;
-}
-
-.discovery {
-  padding-left: 3rem;
-}
-
-.comp-analysis {
-  width: 720px;
-}
-
-.cloud-logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.cloud-logos img {
-  width: 7rem;
-}
-
-.personas {
-  width: 720px;
-}
-
-.persona-doc {
-  width: 35rem;
-  padding: 8rem 3rem 5rem;
-}
-
-.stories {
-  width: 720px;
-}
-
-.flows {
-  width: 720px;
-}
-
-.flows img {
-  margin: 8rem auto 12rem;
-}
-
-.flows-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  width: 720px;
-}
-
-.wireframing {
-  width: 720px;
-}
-
-.wireframing-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin: 0;
-}
-
-.image-wrapper .sketch1,
-.image-wrapper .sketch2 {
-  width: 67rem;
-}
-
-.branding {
-  width: 720px;
-}
-
-.branding-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin: 0;
-}
-
-.mockups {
-  width: 720px;
-}
-
-.mockup-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin: 0;
-}
-
-.up-next {
-  width: 720px;
-}
-
-.up-next-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  margin: 0;
-}
-
-.portfolio-showcase {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.portfolio-showcase .mof-ad,
-.portfolio-showcase .scp-ad,
-.portfolio-showcase .cr-sign {
-  width: 80rem;
+  .project-hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15rem 0 0;
+  }
+  .overview {
+    width: 720px;
+  }
+  .jybe-iphone {
+    width: 22rem;
+  }
+  .discovery {
+    padding-left: 3rem;
+  }
+  .comp-analysis {
+    width: 720px;
+  }
+  .cloud-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cloud-logos img {
+    width: 7rem;
+  }
+  .personas {
+    width: 720px;
+  }
+  .persona-doc {
+    width: 35rem;
+    padding: 8rem 3rem 5rem;
+  }
+  .stories {
+    width: 720px;
+  }
+  .flows {
+    width: 720px;
+  }
+  .flows img {
+    margin: 8rem auto 12rem;
+  }
+  .flows-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 720px;
+  }
+  .wireframing {
+    width: 720px;
+  }
+  .wireframing-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0;
+  }
+  .image-wrapper .sketch1,
+  .image-wrapper .sketch2 {
+    width: 67rem;
+  }
+  .branding {
+    width: 720px;
+  }
+  .branding-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0;
+  }
+  .mockups {
+    width: 720px;
+  }
+  .mockup-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0;
+  }
+  .up-next {
+    width: 720px;
+  }
+  .up-next-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0;
+  }
+  .portfolio-showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-showcase .mof-ad,
+  .portfolio-showcase .scp-ad,
+  .portfolio-showcase .cr-sign {
+    width: 80rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
