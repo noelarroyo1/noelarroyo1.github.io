@@ -572,8 +572,16 @@ footer i {
   width: 40rem;
 }
 
-.jybe-section {
+#ct-project {
   padding-top: 15rem;
+}
+
+.ct-cta {
+  margin-right: 50px;
+}
+
+.ct-intro-img {
+  width: 550px;
 }
 
 .jybe-intro {
@@ -604,7 +612,7 @@ footer i {
 
 .bg-txt,
 .bg-txt-ux {
-  margin: 13rem 0 0 -2rem;
+  margin: 6rem 0 0 -2rem;
 }
 
 .bg-txt-dev {
@@ -794,7 +802,20 @@ form textarea {
     font-size: 8px;
   }
   .hero {
-    height: 40vh;
+    height: 15vh;
+  }
+  .bg-txt,
+  .bg-txt-ux {
+    margin: 1rem 0 0 -2rem;
+  }
+  .bg-txt-dev {
+    margin: -12rem 0 0 -2rem;
+  }
+  .bg-txt-design {
+    margin: -11rem 0 0 -1rem;
+  }
+  .ct-intro-img {
+    width: 45%;
   }
   .home-label {
     top: 0.8rem;
@@ -1519,6 +1540,9 @@ form textarea {
   section {
     padding-bottom: 5rem;
     margin: 0 auto;
+  }
+  .ct-cta {
+    margin-right: 0;
   }
   .jybe-iphone {
     width: 25rem;
