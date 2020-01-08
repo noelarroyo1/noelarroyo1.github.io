@@ -7,24 +7,21 @@
     <title>Noel Arroyo</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:800|Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Open+Sans:400,600,800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="icon" href="logo.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="nav-bar">
-      <a href="/index.html"
-        ><img class="logo" src="images/logo.png" alt="Noel's logo"
-      /></a>
-      <input type="checkbox" id="menu-btn" />
-      <label class="home-label" for="menu-btn">
-        <span class="nav-stick"></span>
-        <span class="nav-stick"></span>
-        <span class="nav-stick"></span>
-      </label>
-      <div class="nav-background"></div>
+    <header class="n-section">
+      <div>
+        <a href="/index.html"
+          ><img class="logo" src="images/logo.png" alt="Noel's logo"
+        /></a>
+      </div>
+
       <nav class="main-nav">
         <ul class="navi">
           <li class="menu-item">
@@ -40,185 +37,141 @@
       </nav>
     </header>
 
-    <section class="hero fadeIn">
-      <h2>Hello! My name is Noel</h2>
-      <h4>
-        I’m a
-        <span
-          class="txt-type"
-          data-wait="2000"
-          data-words='["UI/UX Developer", "Graphic Designer", "Musician", "Graffiti Writer", "husband", "Dad", "Puerto Rican"]'
-        ></span>
-        who loves to code. <br />I’m currently based in Indiana.
-      </h4>
-      <div class="hero-btns">
-        <a class="btn" href="pages/jybe-case-study.html">View latest project</a>
-        <a class="hero-btn-right" href="mailto:contract.noel@gmail.com"
-          >Contact Me</a
-        >
+    <hr />
+
+    <section class="n-section">
+      <div class="home-hero">
+        <h2>Hello! My name is Noel</h2>
+        <h4>
+          I’m a
+          <span
+            class="txt-type"
+            data-wait="2000"
+            data-words='["UI/UX Developer", "Graphic Designer", "Musician", "Graffiti Writer", "husband", "Dad", "Puerto Rican"]'
+          ></span>
+          who loves to code. <br />I’m currently based in Indiana.
+        </h4>
+
+        <div class="neighbor-btns">
+          <div>
+            <a class="btn" href="pages/chowtown-case-study.html"
+              >View latest project</a
+            >
+          </div>
+          <div>
+            <a class="ghost-btn" href="/pages/contact.html">Contact Me</a>
+          </div>
+        </div>
       </div>
-      <!-- <p class="scroller" id="scroll-push">&mdash; scroll down &mdash;</p> -->
     </section>
 
+    <hr />
+
     <main>
-      <p class="bg-txt-ux">UX Design</p>
-      <section class="project" id="ct-project">
-        <div class="ct-cta">
-          <h2 class="title">Chow Town</h2>
-          <h5><strong>**Case study coming soon.**</strong></h5>
-          <p>
-            A food truck finder app forming a relationship and awareness of food
-            trucks within local cities and towns to promote community among
-            neighbors
-          </p>
-          <a
-            class="btn"
-            href="https://www.figma.com/proto/WRqVxtvFVGEm19xE36lsCJ/Food-Truck-Finder-App?node-id=199%3A4169&viewport=145%2C340%2C0.03831740841269493&scaling=scale-down"
-            target="_blank"
-            >View project</a
-          >
-        </div>
-
-        <img
-          class="ct-intro-img"
-          src="images/ChowTown-img.png"
-          alt="Chow Town on iPhone"
-        />
-      </section>
-
-      <section class="project jybe-section" id="project-one">
-        <div class="jybe-cta">
-          <h2 class="title">Jybe</h2>
-          <p>
-            A cloud service app that encourages seamless syncing and easy
-            sharing with family, friends, and co-workers.
-          </p>
-          <a class="btn" href="pages/jybe-case-study.html" target="_blank"
-            >View case study</a
-          >
-        </div>
-
-        <img
-          class="jybe-intro"
-          src="/images/jybe-intro-image.png"
-          alt="Jybe on iPhone"
-        />
-      </section>
-
-      <p class="bg-txt-dev">DEVELOPMENT</p>
-      <section class="project" id="project-three">
-        <div class="blocjams">
-          <h2>BlocJams</h2>
-          <p>
-            A small media player developed with HTML5, CSS, JavaScript, &
-            JQuery.
-          </p>
-          <a
-            class="btn"
-            href="https://blocjams2019.netlify.com/"
-            target="_blank"
-            >View online</a
-          >
-        </div>
-
-        <a href="https://blocjams2019.netlify.com/" target="_blank"
-          ><img
-            class="single-img"
-            src="images/BlocJams.png"
-            alt="BlocJams media player project"
-        /></a>
-      </section>
-
-      <section class="project" id="project-four">
-        <div class="blocipedia">
-          <h2>Blocipedia</h2>
-          <p>
-            An informational application resembling same features as Wikipedia.
-            Built with Ruby on Rails.
-          </p>
-          <a class="btn" href="https://github.com/noelarroyo1/blocipedia"
-            >View on Github</a
-          >
-        </div>
-
-        <a href="https://github.com/noelarroyo1/blocipedia" target="_blank"
-          ><img
-            class="single-img"
-            src="images/Blocipedia.png"
-            alt="Blocipedia project"
-        /></a>
-      </section>
-
-      <p class="bg-txt-design">DESIGN</p>
-      <section class="project" id="project-two">
-        <div>
-          <h2>Graphic Design</h2>
-          <p>
-            Many of the other projects and companies I’ve designed for with a
-            mix of ads, branding, videography, and wireframing.
-          </p>
-          <a
-            class="btn"
-            href="https://www.dropbox.com/sh/78v3b9xjzry9ztj/AACwWu-L0d9qShW4ytkwzSvBa?dl=0"
-            target="_blank"
-            >View in Dropbox</a
-          >
-        </div>
-
-        <img
-          src="/images/gd-intro-image.png"
-          alt="SCP Magazine Ad"
-          class="gdii"
-        />
-      </section>
-
-      <!-- <section class="testimonials">
-        <div class="slider">
-          <div class="slide" id="slide-1">
-            <img src="images/JohnSmithProfileImage.png" alt="Someone's face" />
-            <h2>John Smith</h2>
-            <h5>Creative Services Manager</h5>
-            <p>
-              "Noel has been such an incredible asset to our team! His push to
-              get things done accurately and on time is extremely helpful."
+      <!-- <p class="bg-txt">Design</p> -->
+      <section class="main-section">
+          <div class="left-side">
+            <h3>Chow Town</h3>
+            <p class="text-wrap">
+              To form a relationship and awareness of food trucks within local
+              cities and towns to promote community among neighbors
             </p>
+            <div class="single-btn">
+                <a class="btn" href="pages/chowtown-case-study.html"
+                  >View case study</a
+                >
+            </div>
           </div>
-
-          <div class="slide" id="slide-2">
-            <img src="images/JohnSmithProfileImage.png" alt="Someone's face" />
-            <h2>John Smith</h2>
-            <h5>Creative Services Manager</h5>
-            <p>
-              "Noel has been such an incredible asset to our team! His push to
-              get things done accurately and on time is extremely helpful."
-            </p>
-          </div>
-
-          <div class="slide" id="slide-3">
-            <img src="images/JohnSmithProfileImage.png" alt="Someone's face" />
-            <h2>John Smith</h2>
-            <h5>Creative Services Manager</h5>
-            <p>
-              "Noel has been such an incredible asset to our team! His push to
-              get things done accurately and on time is extremely helpful."
-            </p>
+          <div class="right-side">
+            <img src="/images/ChowTown-img.png" alt="" class="home-image" />
           </div>
         </div>
       </section>
-      <div class="slider-btns">
-        <a href="#slide-1"></a>
-        <a href="#slide-2"></a>
-        <a href="#slide-3"></a>
-      </div> -->
+
+      <section class="main-section">
+          <div class="left-side">
+            <h3>Jybe</h3>
+            <p class="text-wrap">
+               A cloud service app that encourages seamless syncing and easy sharing with family, friends, and co-workers.
+            </p>
+            <div class="single-btn">
+                <a class="btn" href="pages/jybe-case-study.html"
+                  >View case study</a
+                >
+            </div>
+          </div>
+          <div class="right-side">
+            <img src="/images/jybe-intro-image.png" alt="" class="home-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+          <div class="left-side">
+            <h3>Graphic Design</h3>
+            <p class="text-wrap">
+               Many other projects I've designed for other companies. This includes ads, branding, logos, videography, and wireframing.
+            </p>
+            <div class="single-btn">
+                <a class="btn" href="https://www.dropbox.com/sh/78v3b9xjzry9ztj/AACwWu-L0d9qShW4ytkwzSvBa?dl=0" target="_blank"
+                  >View in Dropbox</a
+                >
+            </div>
+          </div>
+          <div class="right-side">
+            <img src="/images/gd-intro-image.png" alt="" class="home-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+          <div class="left-side">
+            <h3>Bloc Jams</h3>
+            <p class="text-wrap">
+               A media player developed with HTML5, CSS3, JavaScript, <span class="no-wrap">&amp; jQuery.</span>
+            </p>
+            <div class="single-btn">
+                <a class="btn" href="https://blocjams2019.netlify.com/" target="_blank"
+                  >View online</a
+                >
+            </div>
+          </div>
+          <div class="right-side">
+            <img src="/images/BlocJams.png" alt="" class="home-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="main-section">
+          <div class="left-side">
+            <h3>Blocipedia</h3>
+            <p class="text-wrap">
+               An informational application resembling the same features as Wikipedia. Built with Ruby on Rails.
+            </p>
+            <div class="single-btn">
+                <a class="btn" href="https://github.com/noelarroyo1/blocipedia" target="_blank"
+                  >View in Github</a
+                >
+            </div>
+          </div>
+          <div class="right-side">
+            <img src="/images/Blocipedia.png" alt="" class="home-image" />
+          </div>
+        </div>
+      </section>
     </main>
 
+    <hr class="spacer"/>
     <footer>
-      <h1>Get in touch</h1>
-      <h4>
-        Looking for a UI/UX Designer for your next<br />
-        project? I’m sure we could work something out.
-      </h4>
-      <a class="footer-btn" href="mailto:contract.noel@gmail.com">Email me</a>
+      <div class="footer-text">
+        <h2>Get in touch</h2>
+        <h4>
+          Looking for a UI/UX Designer for your next<br class="hide" />
+          project? I’m sure we could work something out.
+        </h4>
+      </div>
+
+      <a class="btn" href="mailto:contract.noel@gmail.com">Email me</a>
       <div>
         <a href="https://github.com/noelarroyo1"
           ><i class="nav-link fab fa-github"></i

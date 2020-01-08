@@ -1,0 +1,30 @@
+.ct-section {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 30px 20px;
+}
+
+.ct-left {
+  width: 500px;
+  max-width: 100%;
+}
+
+.ct-right {
+  width: 500px;
+  max-width: 100%;
+}
+
+.ct-right video {
+  width: 500px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .ct-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
