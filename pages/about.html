@@ -7,41 +7,37 @@
     <title>Noel Arroyo</title>
 
     <link
-      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:800|Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Open+Sans:400,600,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
-    <link rel="icon" href="../logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
   </head>
   <body>
-    <header class="nav-bar">
-      <a href="/index.html"
-        ><img class="logo" src="../images/logo.png" alt="Noel's logo"
-      /></a>
-      <input type="checkbox" id="menu-btn" />
-      <label class="home-label" for="menu-btn">
-        <span class="nav-stick"></span>
-        <span class="nav-stick"></span>
-        <span class="nav-stick"></span>
-      </label>
-      <div class="nav-background"></div>
+    <header class="n-section">
+      <div>
+        <a href="/index.html"
+          ><img class="logo" src="/images/logo.png" alt="Noel's logo"
+        /></a>
+      </div>
+
       <nav class="main-nav">
         <ul class="navi">
           <li class="menu-item">
-            <a href="../index.html">Home</a>
+            <a href="/pages/jybe-case-study.html">Work</a>
           </li>
           <li class="menu-item">
-            <a href="../pages/jybe-case-study.html">Work</a>
+            <a href="/pages/about.html">About</a>
           </li>
           <li class="menu-item">
-            <a href="../pages/about.html">About</a>
-          </li>
-          <li class="menu-item">
-            <a href="../pages/contact.html">Contact</a>
+            <a href="/pages/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <hr />
     <section class="about-hero">
       <h2>About</h2>
       <img
@@ -101,13 +97,17 @@
       </section>
     </main>
 
+    <hr class="spacer" />
     <footer>
-      <h1>Get in touch</h1>
-      <h4>
-        Looking for a UI/UX Designer for your next<br />
-        project? I’m sure we could work something out.
-      </h4>
-      <a href="mailto:contract.noel@gmail.com" class="footer-btn">Email me</a>
+      <div class="footer-text">
+        <h2>Get in touch</h2>
+        <h4>
+          Looking for a UI/UX Designer for your next<br class="hide" />
+          project? I’m sure we could work something out.
+        </h4>
+      </div>
+
+      <a class="btn" href="mailto:contract.noel@gmail.com">Email me</a>
       <div>
         <a href="https://github.com/noelarroyo1"
           ><i class="nav-link fab fa-github"></i
