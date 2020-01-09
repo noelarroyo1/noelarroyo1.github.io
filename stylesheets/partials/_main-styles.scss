@@ -66,6 +66,24 @@ h4 {
   max-width: 100%;
 }
 
+.main-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 75px 40px;
+  width: 1140px;
+  max-width: 100%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.larger {
+  font-size: 24px;
+}
+
 .btn {
   background: $primary-color;
   color: $secondary-color;
@@ -114,6 +132,10 @@ h4 {
   max-width: 100%;
 }
 
+.padtop {
+  padding-top: 20px;
+}
+
 footer {
   text-align: center;
   padding: 20px 40px;
@@ -143,6 +165,22 @@ footer {
   max-width: 100%;
 }
 
+.side-by-side {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+}
+
+.side-by-side-image {
+  width: 250px;
+  padding: 20px;
+  max-width: 100%;
+}
+
 .home-image {
   width: 500px;
   padding: 20px 0;
@@ -162,6 +200,18 @@ footer {
     font-size: 8rem;
     top: 4.6em;
   }
+
+  .main-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-item {
+    justify-self: center;
+    max-width: 100%;
+    padding-top: 30px;
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -171,6 +221,10 @@ footer {
 
   .spacer {
     margin-top: 40px;
+  }
+
+  .center {
+    text-align: center;
   }
 
   .main-nav {
@@ -187,6 +241,17 @@ footer {
     flex-flow: column wrap;
     justify-content: center;
     padding: 40px 40px 0;
+  }
+
+  .main-section-grid {
+    display: block;
+    padding: 25px 40px;
+  }
+
+  .grid-item {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 30px;
   }
 
   .home-hero {
@@ -214,5 +279,11 @@ footer {
 
   .single-btn {
     padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .side-by-side {
+    flex-flow: row wrap;
   }
 }

@@ -1,0 +1,35 @@
+.phone-image {
+  max-width: 100%;
+  padding: 40px 20px 20px;
+  width: 250px;
+}
+
+.icon-wrap {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.icons {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .icon-wrap {
+    flex-flow: column nowrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .alignleft {
+    text-align: left;
+  }
+
+  .icon-wrap {
+    flex-flow: row nowrap;
+  }
+  .icons {
+    padding-top: 40px;
+  }
+}
