@@ -25,13 +25,16 @@
       <nav class="main-nav">
         <ul class="navi">
           <li class="menu-item">
-            <a href="/pages/jybe-case-study.html">Work</a>
+              <a href="/index.html" class="add-color">Home</a>
           </li>
           <li class="menu-item">
-            <a href="/pages/about.html">About</a>
+            <a href="/pages/jybe-case-study.html" class="add-color">Work</a>
           </li>
           <li class="menu-item">
-            <a href="/pages/contact.html">Contact</a>
+            <a href="/pages/about.html" class="add-color">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="/pages/contact.html" class="add-color">Contact</a>
           </li>
         </ul>
       </nav>
@@ -40,24 +43,28 @@
     <hr />
 
     <main>
-      <div class="main-section">
-        <div class="contact-hero">
+      <section class="main-section snap">
+        <div class="left-side">
           <h2>
             Interested in<br />
             working together?
           </h2>
           <p class="text-wrap">
-            I’m always up for meeting new people and talking about design,
-            coding, and life in general. Feel free to contact me!
+            I’m always up for meeting new people and talking about<br
+              class="hide"
+            />
+            design, coding, and life in general. Feel free to contact me!
           </p>
           <br />
           <p class="text-wrap">
-            I also would love to grab a beer or coffee. Dinner? Let’s go out for
-            sushi!
+            I also would love to grab a beer or coffee. Dinner?<br
+              class="hide"
+            />
+            Let’s go out for sushi!
           </p>
         </div>
 
-        <div class="form-container">
+          <div class="aligncenter right-side">
           <form
             name="input"
             method="POST"
@@ -91,11 +98,11 @@
               required
               aria-required="true"
             ></textarea>
-
-            <input class="form-btn" type="submit" value="Send" />
+            
+              <input class="btn" type="submit" value="Send Message" />
+            </div>
           </form>
-        </div>
-      </div>
+      </section>
     </main>
 
     <hr class="spacer" />

@@ -44,6 +44,11 @@ h4 {
   white-space: nowrap;
 }
 
+.add-color:hover {
+  color: $highlight1;
+  transition: 0.3s;
+}
+
 .n-section {
   align-items: center;
   display: flex;
@@ -62,6 +67,21 @@ h4 {
   justify-content: space-between;
   margin: 0 auto;
   padding: 75px 40px;
+  width: 1140px;
+  max-width: 100%;
+}
+
+.conclusion-header {
+  margin: 0 auto;
+  padding: 75px 40px 0;
+  width: 1140px;
+  max-width: 100%;
+}
+
+.conclusion {
+  columns: 2;
+  margin: 0 auto;
+  padding: 75px 20px;
   width: 1140px;
   max-width: 100%;
 }
@@ -91,7 +111,7 @@ h4 {
   font-weight: 600;
   margin: 10px 0;
   padding: 10px 20px;
-  width: 170px;
+  width: 180px;
   text-align: center;
   text-decoration: none;
 }
@@ -128,12 +148,39 @@ h4 {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 20px 0;
-  width: 360px;
+  width: 370px;
   max-width: 100%;
+}
+
+.pad {
+  padding: 20px;
 }
 
 .padtop {
   padding-top: 20px;
+}
+
+.padbot {
+  padding-bottom: 40px;
+}
+
+.padx {
+  padding: 0 20px;
+}
+
+.no-padtop {
+  padding-top: 0 !important;
+}
+
+.no-padbot {
+  padding-bottom: 0 !important;
+}
+
+.full-row {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 1140px;
 }
 
 footer {
@@ -165,22 +212,6 @@ footer {
   max-width: 100%;
 }
 
-.side-by-side {
-  align-items: center;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin: 0 auto;
-  width: 500px;
-  max-width: 100%;
-}
-
-.side-by-side-image {
-  width: 250px;
-  padding: 20px;
-  max-width: 100%;
-}
-
 .home-image {
   width: 500px;
   padding: 20px 0;
@@ -191,7 +222,15 @@ footer {
   padding-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+.show {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .shrink {
+    padding: 5px;
+    width: 100%;
+  }
   .text-wrap {
     padding-right: 0;
   }
@@ -219,8 +258,26 @@ footer {
     display: none;
   }
 
+  .show {
+    display: block;
+  }
+
   .spacer {
     margin-top: 40px;
+  }
+
+  .full {
+    width: 350px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .no-padtop-600 {
+    padding-top: 0 !important;
+  }
+
+  .no-padbot-600 {
+    padding-bottom: 0 !important;
   }
 
   .center {
@@ -252,6 +309,7 @@ footer {
     margin: 0 auto;
     max-width: 100%;
     padding-top: 30px;
+    width: 100%;
   }
 
   .home-hero {
@@ -273,6 +331,10 @@ footer {
     text-align: center;
   }
 
+  .right-side {
+    margin-top: 20px;
+  }
+
   .home-image {
     margin: 0 auto;
   }
@@ -280,10 +342,8 @@ footer {
   .single-btn {
     padding-top: 15px;
   }
-}
 
-@media screen and (max-width: 450px) {
-  .side-by-side {
-    flex-flow: row wrap;
+  .conclusion {
+    columns: 1;
   }
 }

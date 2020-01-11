@@ -1,0 +1,44 @@
+label {
+  display: none;
+}
+
+form input {
+  background: #111111;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  outline: none;
+  margin: 20px auto 0;
+  max-width: 100%;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  width: 400px;
+  resize: vertical;
+}
+
+form textarea {
+  background: #111111;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  height: 100px;
+  margin: 20px auto 0;
+  max-width: 100%;
+  outline: none;
+  padding: 1rem 1rem 0;
+  text-decoration: none;
+  width: 400px;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+@media screen and (max-width: 987px) {
+  .snap {
+    align-items: center !important;
+    display: flex !important;
+    flex-flow: column wrap !important;
+    justify-content: center !important;
+  }
+}
