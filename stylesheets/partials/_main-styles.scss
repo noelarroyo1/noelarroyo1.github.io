@@ -289,9 +289,9 @@ footer {
   }
 
   .n-section {
-    flex-flow: column wrap;
-    justify-content: center;
-    padding: 40px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 20px 40px;
   }
 
   .main-section {
