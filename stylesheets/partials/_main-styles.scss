@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $secondary-color;
 }
@@ -16,6 +20,10 @@ a {
   font-family: "Open Sans";
   font-size: 14px;
   line-height: 22px;
+}
+
+hr {
+  margin: 0;
 }
 
 h2 {
